@@ -7,7 +7,7 @@
 
 ## Mikä tämä on?
 
-`botologia-apuri` on [Agent Skills](https://agentskills.io) -muotoinen skilli, joka opettaa
+`laivadatan-metsastaja` on botologian apuri ja [Agent Skills](https://agentskills.io) -muotoinen skilli, joka opettaa
 tekoälyavustajan (Claude tai muu yhteensopiva AI) toimimaan botologian
 tutkimusapurina. Skilli tietää mistä etsiä, miten lähteisiin suhtautua ja
 miten rakentaa luotettava alusprofiili sirpaleisesta lähtöaineistosta.
