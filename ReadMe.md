@@ -46,7 +46,7 @@ hakemistojen, arkistojen ja lähteiden äärelle.
 
 ```bash
 # Kloonaa repo suoraan skills-hakemistoon
-git clone https://github.com/SINUN-KÄYTTÄJÄTUNNUS/laivadatan-metsastaja ~/.claude/skills/laivadatan-metsastaja
+git clone https://github.com/SanttuAhonen/laivadatan-metsastaja ~/.claude/skills/laivadatan-metsastaja
 ```
 
 ### Muut AI-alustat
