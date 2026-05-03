@@ -55,26 +55,28 @@ tiedostojen alusta.
 
 ### Yleishakemistot
 
-**1. Uotila, Lasse (toim.).** *Korsteeni-laivahakemisto 1986–2024*, osat I ja II
+**1. Uotila, Lasse (toim.).** *Korsteeni-laivahakemisto 1986–2025*, osat I ja II
 sekä sisällysluettelo. Suomen Höyrypursiseura ry (SHPS).
 - Osa I: historialliset maininnat (kadonneet ja olemassa olevat alukset), ~15 500 r.
 - Osa II: olemassa olevien höyrylaivojen kaikki maininnat, ~3 500 r.
-- Sisällysluettelo: Korsteeni-lehden artikkelihaku 1986–2024, ~1 580 r.
 
-**2. Karttunen, K. I. 1945.** *Saimaan vesistön höyrylaivaliikenteen
-100-vuotishistoria.* Digitoinut Martti Koponen / Savonlinnan museo.
+**2. Snelman, Pekka** *Korsteeni-lehden artikkelihaku 1986–2025*, ~1 600 r.
+- Artikkelien kirjoittajat ja otsikot 40 vuoden ajalta.
+
+**3. Martti Koponen / Savonlinnan museo** *Karttunen, K. I. 1945., Saimaan vesistön höyrylaivaliikenteen
+100-vuotishistoria.* 
 - Alushakemisto (~870 r.) ja henkilöhakemisto (~2 000 r.)
 - Saimaan vanhempien alusten päälähde — yltää vuoteen 1945
 
-**3. Riimala, Erkki (toim.) 1977.** *Höyrylaivamme.* SHPS, 2. täydennetty
+**4. Riimala, Erkki (toim.) 1977.** *Höyrylaivamme.* SHPS, 2. täydennetty
 painos, 112 s. ISBN 951-99140-4-8.
 - Aakkosellinen kuvaluettelo (~130 alusta) + jäljellä olevien laivojen
   rekisteritieto kevään 1977 tilanteessa
 
-**4. Pakkanen, Esko ja työryhmä 2018.** *Höyrylaivojen Suomi.* SHPS, 240 s.
+**5. Pakkanen, Esko ja työryhmä 2018.** *Höyrylaivojen Suomi.* SHPS, 240 s.
 - Alushakemisto sivunumeroindeksointina, 887 alusta, sekä kirjan oma lähdeluettelo
 
-**5. Sipilä, Petri – Matikka, Hannu – Wirrankoski, Rami 2019.**
+**6. Sipilä, Petri – Matikka, Hannu – Wirrankoski, Rami 2019.**
 *Kelluva kulttuuriperintö — Suomen historialliset laivat.*
 SLHY / Museovirasto, 336 s.
 - ~1 800 alusta sivunumeroindeksointina sekä jaoteltu lähdeluettelo
@@ -82,18 +84,18 @@ SLHY / Museovirasto, 336 s.
 
 ### Telakkaspesifit hakemistot
 
-**6. Myllylä, Martti 1990.** *Albert Krank — varkautelainen laivanrakentaja.*
+**7. Myllylä, Martti 1990.** *Albert Krank — varkautelainen laivanrakentaja.*
 SHPS, 112 s.
 - Lehtoniemen telakka 1889–1901 (~65 alusta), Wahl Varkaus 1882–1888
-  (~50 tilausta), Krankin patentit 1883–1900 (mm. niputtaja-tekniikan keksintö)
+  (~50 tilausta), Krankin patentit 1883–1900
 
-**7. Outakoski, Aslak 1949.** *Oulun Konepaja Osakeyhtiö 1873–1948.*
+**8. Outakoski, Aslak 1949.** *Oulun Konepaja Osakeyhtiö 1873–1948.*
 Kaleva (painettu 1950), 500 numeroitua kappaletta.
 - Pikisaaren konepajan rakennusnumeroidut alukset N:o 101–127 (1903–1927),
   toimitusjohtajat ja pitkäaikaiset työntekijät
-- Pohjois-Suomen rannikon laivanrakennushistorian päälähde
+- Pohjanlahden laivanrakennushistorian päälähde
 
-**8. Valta, Reijo 1997.** *Laudamiehestä Hietaseen — Paul Wahl & Co:n laivasto
+**9. Valta, Reijo 1997.** *Laudamiehestä Hietaseen — Paul Wahl & Co:n laivasto
 ja sen toiminta 1830-luvulta vuoteen 1909.* AjanTieto 1, Gummerus Saarijärvi.
 ISBN 951-97717-0-0.
 - Wahlin koko laivasto 1830–1909 sekä laivakalentereiden vuosi-otokset 1835–1908
@@ -101,7 +103,7 @@ ISBN 951-97717-0-0.
 
 ### Vesistöspesifit hakemistot
 
-**9. Wirrankoski, Raimo A. 2000** (yhteistyössä Erkki Honkasen ja Hannu
+**10. Wirrankoski, Raimo A. 2000** (yhteistyössä Erkki Honkasen ja Hannu
 Koskisen kanssa). *Isoisän laivat — Päijänteen huviliikenteen vanhoja
 ammattilaivoja.* Kopijyvä, 171 s.
 - 39 pidemmän alusartikkelin hakemisto + alias-hakemisto (entiset nimet → nykyiset)
