@@ -198,8 +198,9 @@ Taito pohjaa *Laivadatan metsästäjän oppaaseen* (Santtu Ahonen, *Laiva-lehti*
 Erityiset kiitokset aineistojen alkuperäisille kokoajille:
 
 - **Lasse Uotila / Suomen Höyrypursiseura ry (SHPS)** — Korsteenin
-  laivahakemisto 1986–2024 (osat I ja II) sekä Korsteenin
-  sisällysluettelon kokoaminen.
+  laivahakemisto 1986–2025 (osat I ja II) 
+- **Pekka Snellman / Suomen Höyrypursiseura ry (SHPS)** — Korsteenin
+  artikkelihakemisto 1986–2025 
 - **Martti Koponen / Savonlinnan museo** — Karttunen 1945 -teoksen alus- ja
   henkilöhakemistojen digitointi sekä laaja sisävesiliikenteen bibliografia
   (riihisaari.info, 2 609 viitettä).
