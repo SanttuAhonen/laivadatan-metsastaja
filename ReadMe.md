@@ -137,7 +137,7 @@ git clone https://github.com/SanttuAhonen/laivadatan-metsastaja \
   ~/.claude/skills/laivadatan-metsastaja
 ```
 
-#### Microsoft 365 Copilot Chat
+### Microsoft 365 Copilot Chat
 
 Microsoft 365 Copilot Chatissa tätä skillia ei lisätä tai asenneta teknisesti, mutta sitä voidaan käyttää toimintamallina ja asiantuntijaroolina Copilotin ohjeistamiseen.
 Käyttö tapahtuu pyytämällä Copilotia toimimaan Laivadatan Metsästäjän roolissa ja hyödyntämään tämän repositoryn dokumentaatiota ajattelunsa ja vastaustensa pohjana. Esimerkiksi:
