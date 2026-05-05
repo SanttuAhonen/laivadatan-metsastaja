@@ -1,7 +1,7 @@
 # laivadatan-metsastaja
 
 **Tekoälytaito vanhojen suomalaisten laivojen tiedonhakuun — botologian apuväline.**  
-*An Agent Skill for researching old Finnish vessels — steamships, tugboats, log-bunchers, and motor craft.*
+*An Agent Skill for researching old Finnish vessels — steamships, tugboats, log-bunchers, and motor craft. Almost all source data is in Finnish, thus the tool works best also in Finnish. Feedback on other language trials welcome.*
 
 ---
 
