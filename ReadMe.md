@@ -63,7 +63,7 @@ sekä sisällysluettelo. Suomen Höyrypursiseura ry (SHPS).
 **2. Snellman, Pekka** *Korsteeni-lehden artikkelihaku 1986–2025*, ~1 600 r.
 - Artikkelien kirjoittajat ja otsikot 40 vuoden ajalta.
 
-**3. Martti Koponen / Savonlinnan museo** *Karttunen, K. I. 1945., Saimaan vesistön höyrylaivaliikenteen
+**3. Koponen, Martti / Savonlinnan museo** *Karttunen, K. I. 1945., Saimaan vesistön höyrylaivaliikenteen
 100-vuotishistoria.* 
 - Alushakemisto (~870 r.) ja henkilöhakemisto (~2 000 r.)
 - Saimaan vanhempien alusten päälähde — yltää vuoteen 1945
@@ -123,10 +123,10 @@ ammattilaivoja.* Kopijyvä, 171 s.
 
 ### Lähdebibliografiat (eivät yksittäisiä alushakemistoja)
 
-- **Kivinen, Jussi 2025.** *Höyrylaivakirjallisuutta.* Laiva-lehti 2/2025,
+- **Kivinen, Jussi 2025.** *Höyrylaivakirjallisuutta.* Laiva 2/2025,
   SLHY ry — ~70 teosta vesistöittäin (`references/kirjallisuus.md`).
-- **Pro gradut, lisensiaatit ja käsikirjoitukset** (Laiva 1/2026
-  -bibliografia) (`references/tutkimukset.md`).
+- **Kivinen, Jussi 2025.** *Pro gradut, lisensiaatit ja käsikirjoitukset -bibliografia* Laiva 1/2026, SLHY ry
+  (`references/tutkimukset.md`).
 - **Hakulähteiden täysi katalogi** — verkko, arkistot, vapaakappalekirjastot,
   SoMe (`references/lahteet.md`).
 - **Koposen riihisaari.info-bibliografia** — 2 609 viitettä, viittauskaavat
