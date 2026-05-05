@@ -31,7 +31,7 @@ karikoista (samannimiset alukset, nimenvaihdokset, OCR-virheet, sitaattiketjut).
 
 ### Mitä taito ei korvaa
 
-- **Alkuperäisiä kirjoja** taito tietää minkä julkaisun ja miltä svulta alus löytyy, mutta itse kirjojen leipäteksti ja kuvat eivät ole mukana
+- **Alkuperäisiä kirjoja** — taito tietää minkä julkaisun miltä sivulta alus löytyy, mutta itse kirjojen leipäteksti ja kuvat eivät ole mukana
 - ELKAn tutkijasalia ja alkuperäisiä arkistolähteitä
 - Asiantuntijatietämystä — taito on apuväline, ei asiantuntija
 - Visuaalista kuvantunnistusta ilman kontekstia
