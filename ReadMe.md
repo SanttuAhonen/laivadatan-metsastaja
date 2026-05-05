@@ -232,7 +232,7 @@ references/
   kelluva-kulttuuriperinto-lahteet.md       — Sipilä ym. 2019, kirjan lähteet
   isoisan-laivat-laivahakemisto.md          — Wirrankoski 2000, Päijänteen alukset
   isoisan-laivat-lahteet.md                 — Wirrankoski 2000, kirjan lähteet
-  pirttiniemi-tilauskirja.md                — Pirttiniemen telakka bn 1–771 (~1862–1965), 696 alusta
+  pirttiniemi-tilauskirja.md                — Pirttiniemen kirjat I ja II, rak.no. 1–771 (~1862–1965), 696 alusta
   krank-1990-laivahakemisto.md              — Lehtoniemen telakka 1889–1901
   krank-1990-wahl-laivatilaukset.md         — Wahl Varkaus 1882–1888
   krank-1990-lahteet.md                     — Krankin patentit ja kirjan lähteet
