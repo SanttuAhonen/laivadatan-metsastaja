@@ -27,6 +27,7 @@ karikoista (samannimiset alukset, nimenvaihdokset, OCR-virheet, sitaattiketjut).
 - Tunnistaa lähdeketjuja — erottaa riippumattomat lähteet sitaattiketjuista
 - Ohjata vesistösiirtojen ja nimenvaihdosten jäljittämisessä
 - Tulkita aikalaiskirjoitusasujen variantteja ja vieraskielisten nimien suomennoksia
+- Hakea mediajuttuja Yleltä, Helsingin Sanomista, Aamulehdestä, Turun Sanomista ja Savon Sanomista
 
 ### Mitä taito ei korvaa
 
@@ -60,7 +61,7 @@ sekä sisällysluettelo. Suomen Höyrypursiseura ry (SHPS).
 - Osa I: historialliset maininnat (kadonneet ja olemassa olevat alukset), ~15 500 r.
 - Osa II: olemassa olevien höyrylaivojen kaikki maininnat, ~3 500 r.
 
-**2. Snelman, Pekka** *Korsteeni-lehden artikkelihaku 1986–2025*, ~1 600 r.
+**2. Snellman, Pekka** *Korsteeni-lehden artikkelihaku 1986–2025*, ~1 600 r.
 - Artikkelien kirjoittajat ja otsikot 40 vuoden ajalta.
 
 **3. Martti Koponen / Savonlinnan museo** *Karttunen, K. I. 1945., Saimaan vesistön höyrylaivaliikenteen
@@ -101,9 +102,17 @@ ISBN 951-97717-0-0.
 - Wahlin koko laivasto 1830–1909 sekä laivakalentereiden vuosi-otokset 1835–1908
 - Pohjautuu Jyväskylän maakunta-arkiston PW&CO-aineistoon
 
-**10. Varkauden PIrttiniemen telakan laivadata**
-- Laivadata.fi kirjat I ja II indeksoituna suoraan mukaan
-- Laivadata.fi API kuvien hakemiseen
+**10. Pirttiniemen telakan tilauskirjat (laivadata.fi)**
+- Tilauskirja I (vanha, ~1862–) ja Tilauskirja II (1900–1965) indeksoitu
+  hakemistoksi: 696 alusta, rakennusnumerot 1–771
+- Sarakkeet: rak.nro, nimi, vuosi, tyyppi, tilaaja, pituus
+- Avoin data (CC-lisenssi): https://www.laivadata.fi/
+  — ohjeet: https://www.laivadata.fi/ohjeet/
+  — kuvien rajapinta: https://www.laivadata.fi/rajapinta/
+- **HUOM:** Kattaa VAIN Varkauden Pirttiniemen telakalla valmistuneet alukset
+  (Paul Wahl & Co, A. Ahlström, Lehtoniemi & Taipale, myöhemmät Varkauden
+  telakat). Jos laivan telakka on jo tiedossa eikä se ole Pirttiniemi,
+  älä hae täältä.
 
 ### Vesistöspesifit hakemistot
 
@@ -123,6 +132,15 @@ ammattilaivoja.* Kopijyvä, 171 s.
   SoMe (`references/lahteet.md`).
 - **Koposen riihisaari.info-bibliografia** — 2 609 viitettä, viittauskaavat
   ja URL-rakenne (osana `references/kirjallisuus.md`).
+
+### Mediahakuohjeet
+
+- **Yle, Helsingin Sanomat, Aamulehti, Turun Sanomat, Savon Sanomat**
+  (`references/hakukaavat-media.md`) — hakukaavat, URL-rakenteet ja
+  paywall-käytännöt viidelle suomalaiselle medialle. Sisältää aihesivun
+  Yle:n höyrylaivaartikkeleille sekä Google `site:`-kaavat kaikille.
+  Erityishuomio: höyrybotologi Antti Aho toimii Savon Sanomien
+  toimittajana Leppävirralla.
 
 ---
 
@@ -146,7 +164,7 @@ git clone https://github.com/SanttuAhonen/laivadatan-metsastaja \
 Microsoft 365 Copilot Chatissa tätä skillia ei lisätä tai asenneta teknisesti, mutta sitä voidaan käyttää toimintamallina ja asiantuntijaroolina Copilotin ohjeistamiseen.
 Käyttö tapahtuu pyytämällä Copilotia toimimaan Laivadatan Metsästäjän roolissa ja hyödyntämään tämän repositoryn dokumentaatiota ajattelunsa ja vastaustensa pohjana. Esimerkiksi:
 
-*Toimi “Laivadatan Metsästäjä” ‑agenttina. Hyödynnä tämän repositoryn toimintamallia ja auta löytämään, yhdistämään ja arvioimaan laivoihin ja merenkulkuun liittyvää dataa.*
+*Toimi "Laivadatan Metsästäjä" ‑agenttina. Hyödynnä tämän repositoryn toimintamallia ja auta löytämään, yhdistämään ja arvioimaan laivoihin ja merenkulkuun liittyvää dataa.*
 
 Copilotilta voi tämän jälkeen kysyä apua esimerkiksi:
 - historiallisten tai nykyisten aluslähteiden löytämiseen
@@ -196,13 +214,14 @@ references/
   hakukaavat.md                             — Hakukaavojen pääindeksi
   hakukaavat-finna.md                       — Finna: URL-rakenne ja suodattimet
   hakukaavat-digi.md                        — digi.kansalliskirjasto.fi: hakukaavat
-  hakukaavat-arkistot.md                    — ELKA, laivadata.fi, Kansallisarkisto
+  hakukaavat-arkistot.md                    — ELKA, laivadata.fi (Pirttiniemi), Kansallisarkisto
+  hakukaavat-media.md                       — Yle, HS, Aamulehti, TS, SS: hakukaavat ja URL-rakenteet
   laivanrakennus-historia.md                — Telakat, konepajat, aluksen identiteetti
   lyhenteet-ja-terminologia.md              — Yleiset laivahistorian lyhenteet ja sanasto
   korsteeni-indeksi-lyhenteet.md            — Korsteenin omat hakemistolyhenteet
-  korsteeni-osa-I.md                        — Historialliset maininnat 1986–2024
+  korsteeni-osa-I.md                        — Historialliset maininnat 1986–2025
   korsteeni-osa-II.md                       — Olemassa olevien höyrylaivojen maininnat
-  korsteeni-sisallysluettelo.md             — Korsteeni-lehden otsikkohaku
+  korsteeni-sisallysluettelo.md             — Korsteeni-lehden otsikkohaku 1986–2025
   karttunen-1945-alushakemisto.md           — Saimaan höyrylaivaliikenne, alukset
   karttunen-1945-henkilohakemisto.md        — Saimaan höyrylaivaliikenne, henkilöt
   hoyrylaivamme-1977-laivahakemisto.md      — Riimala 1977, alusluettelo
@@ -213,6 +232,7 @@ references/
   kelluva-kulttuuriperinto-lahteet.md       — Sipilä ym. 2019, kirjan lähteet
   isoisan-laivat-laivahakemisto.md          — Wirrankoski 2000, Päijänteen alukset
   isoisan-laivat-lahteet.md                 — Wirrankoski 2000, kirjan lähteet
+  pirttiniemi-tilauskirja.md                — Pirttiniemen telakka bn 1–771 (~1862–1965), 696 alusta
   krank-1990-laivahakemisto.md              — Lehtoniemen telakka 1889–1901
   krank-1990-wahl-laivatilaukset.md         — Wahl Varkaus 1882–1888
   krank-1990-lahteet.md                     — Krankin patentit ja kirjan lähteet
@@ -248,6 +268,8 @@ Erityiset kiitokset aineistojen alkuperäisille kokoajille:
   (riihisaari.info, 2 609 viitettä).
 - **Jussi Kivinen** — *Höyrylaivakirjallisuutta* (Laiva-lehti 2/2025),
   pohjana taidon kirjallisuusbibliografialle.
+- **laivadata.fi / Suomen Höyrypursiseura ry (SHPS)** — Pirttiniemen telakan
+  digitoidut tilauskirjat, avoin data (CC-lisenssi).
 
 Hakemistoaineistojen tekijänoikeudet säilyvät niiden alkuperäisillä
 oikeudenhaltijoilla — ks. tekijätiedot kunkin reference-tiedoston alussa.
