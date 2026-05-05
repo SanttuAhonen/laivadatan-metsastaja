@@ -101,9 +101,13 @@ ISBN 951-97717-0-0.
 - Wahlin koko laivasto 1830–1909 sekä laivakalentereiden vuosi-otokset 1835–1908
 - Pohjautuu Jyväskylän maakunta-arkiston PW&CO-aineistoon
 
+**10. Varkauden PIrttiniemen telakan laivadata**
+- Laivadata.fi kirjat I ja II indeksoituna suoraan mukaan
+- Laivadata.fi API kuvien hakemiseen
+
 ### Vesistöspesifit hakemistot
 
-**10. Wirrankoski, Raimo A. 2000** (yhteistyössä Erkki Honkasen ja Hannu
+**11. Wirrankoski, Raimo A. 2000** (yhteistyössä Erkki Honkasen ja Hannu
 Koskisen kanssa). *Isoisän laivat — Päijänteen huviliikenteen vanhoja
 ammattilaivoja.* Kopijyvä, 171 s.
 - 39 pidemmän alusartikkelin hakemisto + alias-hakemisto (entiset nimet → nykyiset)
