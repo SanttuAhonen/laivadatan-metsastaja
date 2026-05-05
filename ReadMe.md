@@ -124,13 +124,13 @@ ammattilaivoja.* Kopijyvä, 171 s.
 
 ## Asennus
 
-### Claude.ai (web tai asennettu sovellus)
+### Anthropic Claude.ai (web tai asennettu sovellus)
 
 1. Lataa repon zip-paketti (tuo .skill on oikeasti .zip): **Code → Download .skill**
 2. Avaa Claude.ai → **Settings → Capabilities → Skills**
 3. Lisää ladattu .skill eli zip-tiedosto + -napin avulla.
 
-### Claude Code
+### Anthropic Claude Code
 
 ```bash
 git clone https://github.com/SanttuAhonen/laivadatan-metsastaja \
