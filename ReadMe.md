@@ -137,6 +137,44 @@ git clone https://github.com/SanttuAhonen/laivadatan-metsastaja \
   ~/.claude/skills/laivadatan-metsastaja
 ```
 
+#### Microsoft 365 Copilot Chat
+
+Microsoft 365 Copilot Chatissa tätä skillia ei lisätä tai asenneta teknisesti, mutta sitä voidaan käyttää toimintamallina ja asiantuntijaroolina Copilotin ohjeistamiseen.
+Käyttö tapahtuu pyytämällä Copilotia toimimaan Laivadatan Metsästäjän roolissa ja hyödyntämään tämän repositoryn dokumentaatiota ajattelunsa ja vastaustensa pohjana. Esimerkiksi:
+
+*Toimi “Laivadatan Metsästäjä” ‑agenttina. Hyödynnä tämän repositoryn toimintamallia ja auta löytämään, yhdistämään ja arvioimaan laivoihin ja merenkulkuun liittyvää dataa.*
+
+Copilotilta voi tämän jälkeen kysyä apua esimerkiksi:
+- historiallisten tai nykyisten aluslähteiden löytämiseen
+- eri kielillä julkaistun laivadatan tunnistamiseen
+- datalähteiden luotettavuuden arviointiin
+- ideoihin, mistä ja miten tietoa kannattaa etsiä
+
+Skill toimii Copilot Chatissa prompt‑pohjaisena asiantuntijamallina, ei erillisenä agenttina, ja sen tehokkuus perustuu siihen, että Copilotille kerrotaan selkeästi tämä repository toimintakehyksenä.
+
+#### Päivitykset
+
+Lataa uusin .skill-versio ja korvaa aiempi tarvittaessa.
+
+### OpenAI ChatGPT
+
+Tämän projektin .skill-paketin voi liittää omaan GPT:hen ChatGPT:ssä.
+
+#### Asennus
+- Lataa uusin .skill-tiedosto repositorysta
+- Avaa ChatGPT
+- Siirry kohtaan Explore GPTs → Create
+- Valitse Configure
+- Lisää .skill-tiedosto GPT:hen
+
+#### Käyttö
+
+Tallenna GPT ja aloita käyttö – voit nyt hakea ja käsitellä laivadataa suoraan ChatGPT:ssä.
+
+#### Päivitykset
+
+Lataa uusin .skill-versio ja korvaa aiempi tarvittaessa.
+
 ### Muut tekoälyalustat
 
 Taito noudattaa avointa [Agent Skills -standardia](https://agentskills.io).
