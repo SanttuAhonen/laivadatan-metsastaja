@@ -1,5 +1,7 @@
 # Kirjojen alus-/laivahakemistojen indeksointi — työnkulkuohje
 
+**Versio:** 2026.05.08.01 (versionhistoria tiedoston lopussa)
+
 **Tarkoitus:** Tämä ohje opastaa Claudea indeksoimaan suomalaisten
 laivakirjojen alushakemistoja ja muita liitteitä luotettavasti
 valokuvista. Lataa tämä tiedosto kirjan kuvien mukana, niin Claude
@@ -10,6 +12,11 @@ kulttuuriperintö* (2019) -kirjojen kanssa.
 **Konteksti:** Tämä työ liittyy `laivadatan-metsastaja`-skilliin
 (Santtu Ahonen, 2025–). Indeksoidut hakemistot menevät skillin
 `references/`-kansioon, ja niitä käytetään `grep`illä sen jälkeen.
+
+**Tämä tiedosto EI ole skillin sisällä** — se on erillinen työkalu,
+joka ladataan istuntoon vain kun uutta kirjaa indeksoidaan. Skillin
+versionumero (`metadata.version` SKILL.md:ssä) ja tämän työkalun
+versionumero ovat eri asioita.
 
 ---
 
@@ -298,16 +305,24 @@ Sivunumero on **viitetieto**, ei pääorganisaatio.
 
 ### Tiedostonimet — kirjan nimi, ei kirjailijan
 
-Skillin konventio (4/8 hakemistoa): tiedostonimi perustuu **kirjan
-otsikkoon**, ei kirjailijan sukunimeen + vuoteen.
+Skillin konventio (yhdenmukaistettu 2026.05.08): kaikki kirjapohjaiset
+tiedostot käyttävät **kirjan otsikkoa**, ei kirjailijan sukunimeä +
+vuotta. Vuosi sallittu disambiguointiin tai kun kirjan otsikko on
+yleinen.
 
 | Hyvä | Huono |
 |---|---|
 | `laudamiehesta-hietaseen-laivahakemisto.md` | ~~`valta-1997-laivahakemisto.md`~~ |
 | `hoyrylaivamme-1977-laivahakemisto.md` | (vuosi sallittu disambiguoinniksi) |
 | `oulun-konepaja-1949-laivahakemisto.md` | (vuosi sallittu kun kirjan otsikko on yleinen) |
+| `sisavesien-mikrotonnisto-laivahakemisto.md` | ~~`kivinen-2016-laivahakemisto.md`~~ |
+| `saimaan-100-vuotishistoria-alushakemisto.md` | ~~`karttunen-1945-alushakemisto.md`~~ |
 
 ### Lopullisen laivahakemiston rakenne
+
+**Yläosa noudattaa skillin standardiformaattia** (käyttöönotettu
+2026.05.08): jokaisen lähdetiedoston yläosassa on kolme pakollista
+merkintää: **Mikä tämä on**, **Mikä tämä EI ole**, **Lue rinnan**.
 
 ```markdown
 # <Kirjan nimi> — Laivahakemisto
@@ -315,7 +330,17 @@ otsikkoon**, ei kirjailijan sukunimeen + vuoteen.
 **Lähde:** <viittaus>. ISBN <numero> (jos käsinkirjoitettu, **tarkista
 matemaattisesti**). Sivut <X–Y>.
 
-**Käyttö skillissä:** ...
+**Mikä tämä on:** <yhden lauseen tiivistys siitä mitä tiedosto
+sisältää, esim. "Pakkasen 2018 kirjan alushakemiston kopio sivuilta
+239–240, ~887 alusta sivunumeroindeksointina">
+
+**Mikä tämä EI ole:** Ei korvaa `kirjallisuus.md`:tä (yleinen
+bibliografia), `tutkimukset.md`:ta (opinnäytetyöt), eikä
+`lahteet.md`:tä (työnkulun yleiskatalogi). <jos tiedostolla on
+muita rajauksia, ne tähän>
+
+**Lue rinnan:** `<kirjan>-lahteet.md`, `<sukulaistiedosto-1>`,
+`<sukulaistiedosto-2>` (max 3)
 
 **HUOM kirjan rakenteesta:** kirjassa [on / ei ole] erillistä
 laivahakemistoa kirjan lopussa. Tämä tiedosto on koonti...
@@ -495,31 +520,158 @@ Jaottele lähteet kirjan oman jaottelun mukaan:
 - Kirjallisuus (aakkostettu kirjailijan mukaan)
 - Sarjajulkaisut
 
----
+### Yläosa noudattaa standardiformaattia
 
-## Vaihe 9: Skillin pakkaus ja toimitus
+Tiedoston yläosa noudattaa skillin standardiformaattia (otettu
+käyttöön 2026.05.08):
 
-Kun kaikki on tehty, päivitä:
+```markdown
+# <Kirjan nimi> — Lähdeluettelo
 
-1. **`SKILL.md`** — tiedostotaulukkoon uudet `*-laivahakemisto.md` ja
-   `*-lahteet.md`
-2. **`references/lahteet.md`** — kirja kiitososioon, jos kirja on
-   merkittävä lähde
-3. **`references/hakukaavat.md`** — uusi jakso uudesta paikallisesta
-   hakemistosta + päivitys yhdistelmähakuun
-4. **`references/kirjallisuus.md`** (jos olemassa) — kirja viitelistaan
+**Lähde:** <bibliografinen viittaus>. ISBN <numero>. Sivut <X–Y>
+("<kirjan käyttämä otsikko lähdeosiolle>").
 
-Pakkaa:
+**Mikä tämä on:** <Kirjan tekijä>:n <vuosi>-kirjan oman
+lähdeluettelon kopio sivuilta <X–Y> — eli mitä yksittäisiä teoksia
+ja arkistoja kirja itse on lähteenä käyttänyt.
 
-```bash
-cd /tmp && rm -f laivadatan-metsastaja.skill
-zip -r laivadatan-metsastaja.skill laivadatan-metsastaja/ > /dev/null
-cp laivadatan-metsastaja.skill /mnt/user-data/outputs/
+**Mikä tämä EI ole:** Ei korvaa `kirjallisuus.md`:tä (yleinen
+bibliografia), `tutkimukset.md`:ta (opinnäytetyöt), eikä
+`lahteet.md`:tä (työnkulun yleiskatalogi). Lähteet täällä ovat
+**toissijaisia** suhteessa kirjan omaan tekstiin.
+
+**Lue rinnan:** `<kirjan>-laivahakemisto.md`, `kirjallisuus.md`,
+<sukulaiskirjojen lähdetiedostot, max 3>
+
+<jos relevantti>**Auktoriteettiluokitus:** <tyypillinen
+auktoriteettiluokituksen taso, ks. perusperiaate 4 SKILL.md:ssä>
 ```
 
-**Huom: Tarkista ettei tule duplikaattirakennetta.** `cp -r
-/mnt/skills/user/...` luo alikansion jos kohdekansio on jo olemassa
-— käytä aina `unzip` paketista.
+**Sukulaiskirjojen valinta "Lue rinnan" -listalle**: valitse 1–3
+kirjaa joiden aiheet/aikakausi/vesistö osuvat lähimmäs. Esimerkiksi:
+
+- Päijänteen kirjat → mainitse muut Päijänne-kirjat
+- Wahl-yhteyden sisältävät → mainitse Krank/Wahl-yhteyden takia
+- Aikalaiskirjat (esim. 1949, 1977) → mainitse muut aikalaiset
+
+**HUOM**: Tämä standardiformaatti **ei ole vapaaehtoinen** — sitä
+käytetään systemaattisesti kaikissa skillin lähdetiedostoissa, jotta
+käyttäjä ja Claude tunnistavat tiedoston roolin nopeasti yhdellä
+silmäyksellä.
+
+---
+
+## Vaihe 9: Skillin päivitys, CHANGELOG ja pakkaus
+
+### 9.1 Päivitä SKILL.md ja keskeiset metatiedostot
+
+1. **`SKILL.md`** — tiedostotaulukkoon uudet `*-laivahakemisto.md` ja
+   `*-lahteet.md` -rivit. Päivitä myös `metadata.version`-kenttä
+   YAML-frontmatterissa (ks. CHANGELOG-osio alla).
+2. **`references/lahteet.md`** — kirja kiitososioon, jos kirja on
+   merkittävä lähde
+3. **`references/hakukaavat.md`** (ja tarvittaessa
+   `hakukaavat-arkistot.md`/`hakukaavat-finna.md`/etc.) — uusi jakso
+   uudesta paikallisesta hakemistosta + päivitys yhdistelmähakuun
+4. **`references/kirjallisuus.md`** — kirja viitelistaan. Tämä on
+   **kasvava tiedosto**: se ei ole pelkkä Kivisen Laiva 2/2025
+   -artikkelin kopio, vaan skillin yleinen julkaistujen kirjojen
+   bibliografia, joka täydentyy jokaisen uuden indeksoinnin yhteydessä.
+   Sijoita kirja oikean vesistön/aiheen alle, ja merkitse perään
+   tarvittaessa lyhyt huomautus alkuperästä jos kirja ei ole Kivisen
+   alkuperäisessä luettelossa (esim. "Lisätty 2026-XX,
+   antikvariaattilöydös" tms.).
+5. **`references/tutkimukset.md`** (jos kirja perustuu pro graduun
+   tai sisältää viittauksia opinnäytetöihin) — sama periaate, kasvava
+   tiedosto.
+6. **`references/lyhenteet-ja-terminologia.md`** — jos kirja tuo
+   uutta terminologiaa joka on käyttäjän/Clauden hyödyllistä tunnistaa
+   skillin laajuudessa. **VAIN perusmäärittely + viittaus oikeaan
+   hakemistoon**, ei yksityiskohtia jotka kuuluvat hakemistoon
+   itseensä.
+
+### 9.2 CHANGELOG-merkintä uuteen versioon
+
+Skillin versionhallintakonventio (otettu käyttöön 2026.05.08):
+**versionumero on muotoa `YYYY.MM.DD.##`**, ja sama päivämäärä saa
+juoksevan ##-numeron jos sama päivä sisältää useita iteraatioita.
+Saman päivän iteraatiot yhdistetään yhdeksi versioksi käyttäjän
+päätöksellä.
+
+1. **Päivitä `SKILL.md`-frontmatteri**:
+   ```yaml
+   metadata:
+     version: 2026.MM.DD.##  # uusi versionumero
+   ```
+
+2. **Lisää uusi merkintä `CHANGELOG.md`-tiedoston yläosaan** heti
+   "Versionhistoria"-otsikon ja formaatin selityksen jälkeen, ennen
+   edellisiä merkintöjä. Käytä Keep a Changelog -konventiota (uusin
+   ensin):
+
+   ```markdown
+   ## YYYY.MM.DD.## — <lyhyt otsikko muutoksesta>
+
+   **Lisätty**:
+
+   - `<kirjan>-laivahakemisto.md` (<lähde>, ~<N> alusta)
+   - `<kirjan>-lahteet.md` (<lähdeluettelon laajuus>)
+   - <muut uudet tiedostot>
+
+   **Muutettu**:
+
+   - <päivitykset olemassa oleviin tiedostoihin, esim.
+     kirjallisuus.md, lahteet.md, hakukaavat.md, lyhenteet>
+
+   **Lähteet**: <kirjan tunnistetiedot>; <eventuaaliset
+   asiantuntija- tai båtologi-palautteet>; <muut alkuperälähteet>.
+   ```
+
+3. **Sähkemuotoinen tyyli**: pitkät kappaleet välttämään,
+   pisteittäin, oleelliset asiat tiivisti. Vältä
+   yksityiskohtaista toistoa skillin sisäisestä rakenteesta.
+
+### 9.3 Pakkaa skill
+
+**Käytä skill-creatorin paketointityökalua**, ei pelkkää zippaa:
+
+```bash
+rm -f /mnt/user-data/outputs/laivadatan-metsastaja.skill
+cd /mnt/skills/examples/skill-creator && \
+  python -m scripts.package_skill /tmp/laivadatan-metsastaja /mnt/user-data/outputs
+```
+
+Skill-creator validoi:
+
+- YAML-frontmatterin sallitut kentät (mm. `name`, `description`,
+  `metadata`, `license`)
+- Tiedostorakenteen yleisen kelpoisuuden
+- Pakkaa `.skill`-tiedostoksi joka voidaan asentaa Claudeen
+
+**Jos validointi hylkää muutoksen** (esim. `version`-kenttä top-tasolla
+ei ole sallittu — käytä `metadata.version`), tarkista virheviesti ja
+korjaa frontmatter ennen kuin yrität uudestaan.
+
+### 9.4 Validointitarkistus
+
+Tarkista ennen toimitusta:
+
+```bash
+# Versionumero pakkauksessa
+unzip -p /mnt/user-data/outputs/laivadatan-metsastaja.skill \
+  laivadatan-metsastaja/SKILL.md | head -7
+
+# CHANGELOG-merkintä paketissa
+unzip -p /mnt/user-data/outputs/laivadatan-metsastaja.skill \
+  laivadatan-metsastaja/CHANGELOG.md | head -25
+
+# Uudet tiedostot ovat mukana
+unzip -l /mnt/user-data/outputs/laivadatan-metsastaja.skill | \
+  grep -E "<kirjan-lyhytnimi>"
+```
+
+Versionumeron, CHANGELOG-merkinnän ja uusien tiedostojen pitää
+näkyä paketissa.
 
 ---
 
@@ -530,11 +682,13 @@ cp laivadatan-metsastaja.skill /mnt/user-data/outputs/
       laajenna / erillinen tiedosto)
 - [ ] **Tiedostonimi: kirjan otsikko, ei kirjailijan sukunimi**
       (esim. `laudamiehesta-hietaseen-*.md`, ei
-      `valta-1997-*.md`)
+      `valta-1997-*.md`). Vuosi sallittu vain disambiguointiin.
 - [ ] Kirjan tiedot otsikossa: nimi, kirjailijat, kustantaja, ISBN,
       vuosi, sivut
 - [ ] **ISBN tarkistettu matemaattisesti** jos käsinkirjoitettu
       (ISBN-10 mod 11 = 0; ISBN-13 mod 10 = 0)
+- [ ] **Standardi yläosaformaatti** kaikissa uusissa lähdetiedostoissa:
+      Mikä tämä on / Mikä tämä EI ole / Lue rinnan
 - [ ] **Laivahakemisto aakkosjärjestyksessä tyypeittäin** —
       ei sivuittain. Tyyppijako: purjealukset / höyrylaivat /
       lotjat-proomut tai vastaava aineiston mukaan
@@ -554,9 +708,17 @@ cp laivadatan-metsastaja.skill /mnt/user-data/outputs/
 - [ ] Visuaalinen tarkistus tehty kaikille sivuille
 - [ ] Tunnetut painovirheet kirjassa **säilytetty** mutta merkitty
       huomautuksina (älä korjaa kirjan virheitä omasta päästä)
-- [ ] Erillinen lähde-tiedosto luotu
-- [ ] SKILL.md, lahteet.md, kirjallisuus.md, lyhenteet-ja-terminologia.md
-      päivitetty (jos relevanttia uudelle kirjalle)
+- [ ] Erillinen lähde-tiedosto luotu (yläosa standardiformaatissa)
+- [ ] **`SKILL.md`** — uudet rivit lähdetiedostotaulukkoon
+- [ ] **`SKILL.md` `metadata.version`** päivitetty uuteen
+      `YYYY.MM.DD.##`-numeroon
+- [ ] **`CHANGELOG.md`** — uusi versiomerkintä yläosaan, sähkemuotoisesti
+- [ ] **`kirjallisuus.md`** — kirja lisätty (kasvava bibliografia,
+      ei vain Kivisen Laiva-artikkelin kopio)
+- [ ] **`tutkimukset.md`** päivitetty jos relevanttia (graduja,
+      lisensiaatteja jotka kirja käyttää)
+- [ ] **`lahteet.md`** ja **`hakukaavat*.md`** päivitetty jos
+      relevanttia
 - [ ] **Terminologiaan EI tuotu yksityiskohtia** jotka kuuluvat
       hakemistoihin — vain perusmäärittely + viittaus oikeaan
       hakemistoon
@@ -564,6 +726,10 @@ cp laivadatan-metsastaja.skill /mnt/user-data/outputs/
       tulokset järkeviä
 - [ ] Yhdistelmähaku SKILL.md:ssä päivitetty sisältämään uusi
       hakemisto
+- [ ] **Skill paketoitu skill-creatorin kautta**
+      (`python -m scripts.package_skill`), ei pelkällä `zip`-komennolla
+- [ ] Validointitarkistus tehty (versionumero, CHANGELOG-merkintä,
+      uudet tiedostot näkyvät paketissa)
 - [ ] Pakettikoko järkevä, ei duplikaattirakennetta
 
 ---
@@ -585,3 +751,74 @@ cp laivadatan-metsastaja.skill /mnt/user-data/outputs/
 **Yli 4 sivun hakemiston tapauksessa kannattaa harkita osittain:** tee
 ensin lähdeindeksi ja A–E, jatka loput myöhemmin pala kerrallaan.
 Statusosa pitää sisällön käytettävänä kesken työnkin.
+
+---
+
+## Versionhistoria
+
+Versionumeroformaatti: `YYYY.MM.DD.##`. Saman päivän iteraatiot
+yhdistetään yhdeksi versioksi. Versioidut: oleelliset ohjemuutokset,
+uusien työvaiheiden lisäykset, skillin rakennemuutoksiin reagoivat
+päivitykset.
+
+Tämä työnkulkuohje on **erillinen skillistä** — se ei ole skillin
+sisällä, joten skillin versionhistoria (`CHANGELOG.md`) ja tämän
+työkalun versionhistoria ovat erillisiä.
+
+---
+
+### 2026.05.08.01 — standardi yläosaformaatti, CHANGELOG-prosessi, skill-creator-pakkaus
+
+**Lisätty**:
+
+- Versionumero ja versionhistoria-osio tähän työnkulkuohjeeseen
+  itseensä
+- Ohje **standardin yläosaformaatin** käytöstä lähdetiedostoissa
+  (Mikä tämä on / Mikä tämä EI ole / Lue rinnan) — käyttöönotettu
+  skillissä 2026.05.08
+- Vaihe 9.2: **CHANGELOG-merkinnän** lisääminen uuden kirjan
+  indeksoinnin yhteydessä, sähkemuotoinen tyyli
+- Vaihe 9.1 kohta 4: maininta että `kirjallisuus.md` on **kasvava
+  bibliografia**, ei pelkkä Kivisen Laiva 2/2025 -artikkelin kopio
+- Vaihe 9.1 kohta 5: vastaava maininta `tutkimukset.md`:lle
+- Vaihe 9.4: validointitarkistus paketin sisällöstä
+  (`unzip -p`, `unzip -l`)
+- Tarkistuslistaan kohdat: standardiformaatti, `metadata.version`,
+  CHANGELOG, kasvavat bibliografiat, skill-creator-pakkaus,
+  validointitarkistus
+
+**Muutettu**:
+
+- Vaihe 9 jaettu neljään alaosaan (9.1 päivitykset, 9.2 CHANGELOG,
+  9.3 pakkaus, 9.4 validointi)
+- Vaihe 9.3: **pakkauskomento päivitetty** `zip`-komennosta
+  `python -m scripts.package_skill`-komentoon (skill-creator validoi
+  YAML-frontmatterin)
+- Tiedostonimikonventio (Vaihe 6 alussa): "4/8 hakemistoa"
+  -maininta poistettu, koska 2026.05.08 alkaen **kaikki**
+  kirjapohjaiset tiedostot käyttävät kirjan otsikkoa.
+  Esimerkkitaulukkoon lisätty `sisavesien-mikrotonnisto-` ja
+  `saimaan-100-vuotishistoria-` (uudet 2026.05.06–08
+  yhdenmukaistuksesta)
+- Vaihe 8 (lähdeluettelon indeksointi): uusi alaluku
+  "Yläosa noudattaa standardiformaattia" template-koodilla
+- Yläosa: lisätty maininta että tämä tiedosto **ei ole skillin
+  sisällä**, ja että skillin ja tämän työkalun versionumerot ovat
+  eri asioita
+
+**Konteksti**: Skillissä otettiin 2026.05.08 käyttöön (a)
+versionhallinta `CHANGELOG.md`:llä ja `metadata.version`-kentällä,
+(b) standardi yläosaformaatti kaikissa 11 lähdetiedostossa,
+ja (c) tiedostonimien yhdenmukaistus kirjapohjaiseksi (mm.
+`karttunen-1945-*` → `saimaan-100-vuotishistoria-*`,
+`kivinen-2016-*` → `sisavesien-mikrotonnisto-*`). Tämä työnkulkuohje
+päivitetään vastaamaan uutta käytäntöä.
+
+---
+
+### Tätä aiempi versio
+
+Aiempi versio (ennen 2026.05.08.01) ei ollut versionoitu. Se sisälsi
+vaiheet 1–9 ja tarkistuslistan, mutta käytti vanhentunutta
+`zip`-pakkauskomentoa eikä tuntenut standardia yläosaformaattia tai
+`metadata.version`-kenttää SKILL.md:n YAML-frontmatterissa.
