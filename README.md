@@ -49,19 +49,17 @@ karikoista (samannimiset alukset, nimenvaihdokset, OCR-virheet, sitaattiketjut).
 Taitoon on sisällytetty **kirjojen, väitöskirjojen, gradujen, lehtien
 ja telakkakirjojen omat alus-, henkilö- ja lähdehakemistot** — eli
 tieto siitä, mitä alusta käsitellään missä julkaisussa ja millä
-sivulla. Itse kirjojen sisältöä (leipäteksti, narratiivi, kuvat,
-taulukot) ei ole indeksoitu, vaan tarvitset useimmiten vielä
-alkuperäisen julkaisun. Mutta jo tieto siitä mistä etsiä säästää
+sivulla. **Kirjojen, lehtien tai muiden julkaisujen sisältöä ei täällä ole mukana, itse sisältöön tarvitset 
+sen alkuperäisen julkaisun**. Mutta jo tieto siitä mistä tuota tietoa pitäisi etsiä säästää
 tunteja kirjasto- ja antikvariaattityötä.
 
 **Numeroina:**
 
-- **14 indeksoitua julkaisua** — 11 kirjaa, 1 väitöskirja (Kivinen 2016),
-  1 pro gradu (Koponen 1988) ja 1 telakan tilauskirjapari (Pirttiniemi /
+- **14 indeksoitua julkaisua** — 11 kirjaa, yksi väitöskirja (Kivinen 2016),
+  yksi pro gradu (Koponen 1988) ja yhden telakan tilauskirjapari (Pirttiniemi /
   laivadata.fi)
 - **~7 000+ alusmainintaa** yhteensä — sis. ~16 000 rivin
-  Korsteeni-laivahakemisto (Uotila), Korsteenin artikkelihaku
-  (Snellman, ~1 630 r.), Pakkasen 887 alusta, Sipilän ~1 800,
+  Korsteeni-laivahakemisto (Uotila), Pakkasen 887 alusta, Sipilän ~1 800,
   Pirttiniemen 696, Karttusen ~870 ja kymmenen muuta telakka-, vesistö-
   ja yleishakemistoa
 - **~2 200+ henkilöä rooleittain** — kapteenit, varustajat, telakka-
@@ -69,12 +67,15 @@ tunteja kirjasto- ja antikvariaattityötä.
 - **2 opinnäytetyön oma sisältö** indeksoituna + Laiva-lehden
   pro gradu / lisensiaatti / käsikirjoitus -bibliografia (Kivinen 2026)
 - **Laiva-lehden sisällysluettelo 1/2001–1/2026** (92 lehteä)
+- **Korsteeni-lehden sisällysluettelot 1986-2025** (Snellman, ~1 630 r.),
 - **9 sanomalehden hakuohjeet** — Yle, HS, Aamulehti, TS, SS,
   Etelä-Saimaa, Karjalainen, Warkauden Lehti, Iisalmen Sanomat
-- **~17 verkkohakukohdetta** — Finna, digi.kansalliskirjasto.fi,
+- **20+ verkkohakukohdetta** — Finna, digi.kansalliskirjasto.fi,
   ELKA/Astia, Kansallisarkisto, laivadata.fi, riihisaari.info ja
   yliopistojen avoimet julkaisuarkistot (JYX, Trepo, Helda, UTUPub,
-  UEF, Jultika, Aaltodoc, LUTPub, Osuva, Doria, Lauda)
+  UEF, Jultika, Aaltodoc, LUTPub, Osuva, Doria, Lauda) sekä liuta
+  laivaharrastajien, yhdistysten ja båtålogien www-sivuja ja
+  keskustelufoorumeita. Sekä tietty avoimet haut netistä.
 
 Yksityiskohtainen tiedostokohtainen sisältö löytyy alta
 [Sisältö-osasta](#sisältö). Kunkin lähteen alkuperäiset kokoajat ja
@@ -196,10 +197,8 @@ references/
   lahteet.md                                   — Hakulähteiden täysi katalogi
 ```
 
-> **Suuret hakemistot** (Korsteeni I/II, Saimaan 100-vuotishistoria
-> -alushakemisto, Kelluva kulttuuriperintö, Höyrylaivojen Suomi, Laiva-lehti
-> sisällysluettelo) tutki aina ensin `grep`illä — niiden lataaminen
-> kontekstiin kokonaisuudessaan on tuhlausta.
+Hakemistoaineistojen tekijänoikeudet säilyvät niiden alkuperäisillä
+oikeudenhaltijoilla — ks. tekijätiedot kunkin tiedoston alussa.
 
 ---
 
@@ -208,7 +207,8 @@ references/
 Taito pohjaa *Laivadatan metsästäjän oppaaseen* (Santtu Ahonen, *Laiva-lehti*
 4/2024) ja on kehitetty käytännön tutkimustyön pohjalta.
 
-Erityiset kiitokset aineistojen alkuperäisille kokoajille:
+Erityiset kiitokset ensimmäisten aineistojen alkuperäisille kokoajille. Aineistot 
+ovat toimineet oivana inspiraationa ja lähteenä tämän skillin versioille:
 
 - **Lasse Uotila / Suomen Höyrypursiseura ry (SHPS)** — Korsteenin
   laivahakemisto 1986–2025 (osat I ja II) 
@@ -221,11 +221,11 @@ Erityiset kiitokset aineistojen alkuperäisille kokoajille:
   pohjana taidon kirjallisuusbibliografialle, sekä *Sisävesien
   mikrotonnisto* (väitöskirja 2016) joka tarjoaa myös laajan
   arkistolähteiden tiivistyksen.
-- **laivadata.fi / Suomen Höyrypursiseura ry (SHPS)** — Pirttiniemen telakan
+- **laivadata.fi** — Pirttiniemen telakan
   digitoidut tilauskirjat, avoin data (CC-lisenssi).
 
 Hakemistoaineistojen tekijänoikeudet säilyvät niiden alkuperäisillä
-oikeudenhaltijoilla — ks. tekijätiedot kunkin reference-tiedoston alussa.
+oikeudenhaltijoilla — ks. tekijätiedot kunkin tiedoston alussa.
 
 ---
 
