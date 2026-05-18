@@ -1,0 +1,355 @@
+================================================================
+OSALLISTUJAN INDEKSOINTITYOKALU
+Kirjan alus- tai laivahakemiston indeksointi valokuvista
+================================================================
+Projekti: laivadatan-metsastaja
+Yllapitaja: Santtu Ahonen
+Versio: 2026.05.18.01
+
+================================================================
+LATAUSOHJE TEKOALYLLE
+================================================================
+
+Tama on ohje tekoalylle (Claude, ChatGPT, Gemini tms.). Lataa tama
+tiedosto YHDESSA kirjan hakemistosivujen valokuvien kanssa
+tekoalypalveluun, niin tekoaly osaa muuntaa kuvat tekstimuotoiseksi
+hakemistoksi tata ohjetta noudattaen.
+
+Lopputulos: yksi .txt-tiedosto joka sisaltaa kirjan tunnistetiedot
+seka itse hakemiston tekstimuodossa. Tiedosto on tarkoitettu
+jaettavaksi `laivadatan-metsastaja`-taidon kehittajille
+Discussions-kanavassa.
+
+LINKKI DISCUSSIONSIIN:
+https://github.com/SanttuAhonen/laivadatan-metsastaja/discussions
+
+LINKKI TARKEMPAAN OHJEISTUKSEEN (CONTRIBUTING.md):
+https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/CONTRIBUTING.md
+
+================================================================
+PERIAATE: ALA KEKSI TIETOA
+================================================================
+
+Tama on tarkein saanto. Skillin perusperiaate sanoo: "Ala keksi
+tietoa - ala vastauksissa, eika myoskaan skilliin itseensa." Tama
+koskee erityisesti tata indeksointityota:
+
+- Jos OCR antaa numeron jonka pitaisi olla "95" mutta lukee "99",
+  ALA korjaa muistivaraisesti - tarkista visuaalisesti zoomatulla
+  kuvalla
+
+- Jos tahti-merkki (*) ei nay OCR-tuloksessa, ALA lisaa sita omasta
+  paasta - tarkista kuvasta
+
+- Jos kirjassa on painovirhe (esim. vuosiluku joka ei voi pitaa
+  paikkaansa), SAILYTA se kirjan mukaisena ja merkitse epailyttavaksi
+  huomautuksena, mutta ALA korjaa
+
+- Jos jotain ei pysty lukemaan kuvasta varmuudella, merkitse se
+  esim. "(epaselva)" tai "(?)" - ALA arvaa
+
+================================================================
+VAIHE 1: KUVIEN VALMISTELU
+================================================================
+
+KUVAA TAI SKANNAA hakemistosivut yksi kerrallaan:
+
+- Kayta hyvaa valaistusta (luonnonvalo tai tasainen huoneenvalo)
+- Pida kamera/puhelin suorassa sivuun nahden
+- Tarkenna tekstin selvyyteen, ei kannen tai paperin tekstuuriin
+- Yksi sivu per kuva (alon yrita mahduttaa aukeamaa yhteen kuvaan)
+- Tarkista jokainen kuva ennen seuraavaan siirtymista: nakyyko teksti
+  selvasti, ovatko numerot luettavissa
+
+OTA MUKAAN myos seuraavat sivut jos mahdollista:
+
+- KANSI tai NIMIOLEHTI (kirjailijat, otsikko, kustantaja, vuosi, ISBN)
+- SISALLYSLUETTELO (mistakirjan sivulta hakemisto alkaa)
+- HAKEMISTON ALKUSIVU (selitysmerkit ovat usein hakemiston paassa)
+- KIRJAN OMA LAHDELUETTELO tai "Tarkeimpia lahteita" -sivu
+
+================================================================
+VAIHE 2: TUNNISTA KIRJAN OMA OHJE HAKEMISTOSTA
+================================================================
+
+Hakemiston paassa on yleensa lyhyt selitys siita, mita kirjan omat
+merkinnat tarkoittavat. ESIMERKKEJA:
+
+- "Mikali aluksesta on kuva, on sivunumero merkitty tahdella."
+- "Versaalit nimet = nykyiset, pienet kirjaimet = entiset"
+- "Samannimiset alukset eroteltu rakennusvuoden mukaan"
+
+NAMA MERKITYKSET VAIHTELEVAT KIRJOJEN VALILLA!
+
+Esimerkkeja olemassa olevista skillin hakemistoista:
+
+  Pakkanen 2018 (Hoyrylaivojen Suomi):
+    tahti aluksen NIMEN perassa
+    = alustyyppi (* purje, ** moottori, *** koneeton majakkalaiva)
+
+  Sipila ym. 2019 (Kelluva kulttuuriperinto):
+    tahti SIVUNUMERON perassa
+    = aluksesta on kuva silla sivulla
+
+Kirjoita selitysmerkit selvasti tuotettavan tiedoston otsikkoon.
+Yllapitaja luottaa niiden olevan oikein.
+
+================================================================
+VAIHE 3: KAYTA TEKOALYA KUVISTA TEKSTIKSI
+================================================================
+
+Anna tekoalylle:
+
+1. Tama ohjetiedosto (latauksen alussa)
+2. Hakemistosivujen kuvat (yksi kerrallaan tai zip-tiedostona)
+3. Lyhyt selitys mita kirjasta on kyse (kirjailija, otsikko, vuosi)
+
+Tekoaly tuottaa hakemiston rivi rivilta.
+
+JOS HAKEMISTOSSA ON USEITA SARAKKEITA per sivu (yleensa 2-4):
+
+- Tekoalyn voi olla helpompi kasitella yksi sarake kerrallaan
+- Pyyda silloin tekoalya leikkaamaan kuva sarakkeittain tai
+  toimittamaan tieto sarake kerrallaan
+- 2-3 sarakkeen kohdalla yleensa onnistuu yhdella otteella, isompi
+  maara vaatii usein osittaisen kasittelyn
+
+JOS KUVA ON HEIKKOLAATUINEN tai teksti on hyvin pienta:
+
+- Pyyda tekoalya kertomaan mitka kohdat ovat epavarmoja
+- Zoomaa epaselviin kohtiin ja ota uusi kuva tarvittaessa
+- Ei haittaa jos joitakin rivia jaa puuttumaan - parempi
+  puuttuvat rivit kuin keksityt rivit
+
+================================================================
+VAIHE 4: TARKISTA TULOS RIVI RIVILTA
+================================================================
+
+Tama on tyon tarkein vaihe. OCR ja tekoaly EIVAT ole koskaan 100 %
+oikein. Kay tulos lapi vertaamalla alkuperaiseen kuvaan:
+
+1. Aukaise tekoalyn tuottama tekstiriviluettelo
+2. Aukaise sivun kuva isolla
+3. Kay rivi rivilta: onko nimi oikein, ovatko kaikki numerot,
+   onko tahtimerkit paikoillaan
+4. Korjaa virheet ja merkitse epaselvat huomautuksin
+
+TUNNETUT OCR-VIRHEET joihin kannattaa kiinnittaa huomiota:
+
+  Skandinaaviset kirjaimet (A, O, A) puuttuvat usein:
+    "Aanekoski" -> pitaa olla "Aanekoski"
+    "Aransgrund" -> pitaa olla "Aransgrund"
+
+  Tahti voi luettua vaarin tai jaada pois:
+    %, +, t, x, : voivat tarkoittaa alkuperaista tahtea
+    Tarkista aina kuvasta
+
+  Numerot 5/6/8/9 sekoittuvat helposti
+
+  Pieni l, iso I ja numero 1 sekoittuvat
+
+  Aluksen nimi joka nayttaa oudolta tai jossa on omituisia merkkeja
+  = todennakoisesti virhe
+
+EPAILYTTAVAT KOHDAT:
+
+- Hyvin pieni numero (3-numeroinen) keskella rivia, jos kirjassa on
+  vain 240 sivua -> ehka OCR luki vaarin
+- Numero joka ei voi olla kirjan sivunumero (esim. 1897 kun kirjassa
+  on 240 sivua) -> tarkista
+- Sama alus kahdesti perakkain hieman eri kirjoitusasulla
+  -> todennakoisesti OCR-virhe, ei kaksi eri alusta
+
+================================================================
+VAIHE 5: MUOTOILE TIEDOSTO LOPULLISEEN MUOTOON
+================================================================
+
+Tuota lopulta YKSI tekstitiedosto, joka sisaltaa seuraavat osat
+allekkain. Ala kayta Markdown-syntaksia (* tai #) - kayta vain
+isoja kirjaimia otsikoissa, sisennysta luettelossa, ja viivoja
+erottimina.
+
+------ MALLI ------
+
+EHDOTUS: <julkaisun nimi>
+
+
+LAHDETIEDOT
+
+  Tekija(t):       Sukunimi, Etunimi (ja muut tekijat)
+  Vuosi:           YYYY
+  Teos:            Taydellinen nimi alaotsikkoineen
+  Julkaisija:      Kustantaja, paikka
+  ISBN / ISSN:     (jos saatavilla)
+  Sivumaara:       N sivua
+  Hakemiston sivut: esim. s. 245-278
+  Tyyppi:          kirja / lehti / pro gradu / vaitoskirja /
+                   telakkakirja / muu
+  Mista saatu:     oma hyllyni / kirjasto X / antikvariaatti /
+                   digitaalinen julkaisu / arkisto
+
+
+SELITYSMERKIT (kirjan oman ohjeen mukaan)
+
+  Tahti (*) sivunumeron perassa = aluksesta on kuva silla sivulla
+  Versaalit nimet = nykyiset alukset, pienet kirjaimet = entiset
+  (jne. kirjan omien selitysten mukaan)
+
+
+HAKEMISTO
+
+  Alukset aakkosjarjestyksessa. Kunkin kohdalla sivunumero(t)
+  ja muut tiedot kirjan mukaan. Esimerkki:
+
+  Aallotar (1881, hoyrylaiva, Saimaa)
+      s. 47
+      s. 89
+      s. 102*
+
+  Aallotar (1909, hoyrylaiva, Paijanne)
+      s. 47   - varustaja Y
+      s. 134  - haaksirikko 1923
+
+  Ahti I (1898, hoyryhinaaja, Nasijarvi)
+      s. 22
+      s. 56-58
+
+  ...
+
+
+HUOMAUTUKSET
+
+  - Mainitse epavarmuudet selkeasti: "(sivunumero epaselva)",
+    "(?)", "(nimi mahdollisesti vaarin kirjattu)",
+    "(samanniminen alus, ei varmuutta)"
+
+  - Mainitse jos kirjassa on selkeita OCR- tai painovirheita
+
+  - Mainitse jos sama alus esiintyy kirjassa useilla eri
+    kirjoitusasuilla
+
+  - Mainitse aina etta indeksoinnissa kaytettiin tekoalya, mika
+    tyokalu, ja mita itse tarkistit jalkikateen
+
+
+KASITTELYTIEDOT
+
+  Tyokalu:       Claude / ChatGPT / Gemini / muu
+  Tehty:         YYYY-MM-DD
+  Tarkistettu:   alkuperaisen kirjan kuvista kylla / osittain / ei
+  Tarkistamatta jaaneet sivut: <luettelo, jos relevantti>
+
+------ MALLIN LOPPU ------
+
+================================================================
+VAIHE 6: TALLENNA .TXT-MUODOSSA
+================================================================
+
+Tallenna tiedosto pelkkana tekstina UTF-8-koodauksella, jotta
+suomalaiset kirjaimet (a, o, a) sailyvat oikein.
+
+  Windowsin Muistio (Notepad):
+    Tiedosto -> Tallenna nimella -> Koodaus: UTF-8 -> Tallenna
+
+  Mac TextEdit:
+    Muoto -> Muunna pelkaksi tekstiksi -> Tallenna -> UTF-8
+
+  Tekoalyn lataussivu yleensa antaa tiedoston suoraan oikeassa
+  muodossa. Tarkista vain etta paate on .txt, ei .md.
+
+Anna tiedostolle kuvaava nimi, esim:
+
+  hoyrylaivojen-suomi-2018.txt
+  kelluva-kulttuuriperinto-2019.txt
+  pakkanen-hoyrylaivojen-suomi.txt
+  laiva-lehti-1985.txt
+
+================================================================
+VAIHE 7: LAHETA DISCUSSIONSIIN
+================================================================
+
+1. Mene osoitteeseen:
+   https://github.com/SanttuAhonen/laivadatan-metsastaja/discussions
+
+2. Klikkaa "New discussion"
+
+3. Otsikko: esim. "Pakkanen 2018 - Hoyrylaivojen Suomi -
+   alushakemisto"
+
+4. Viestiin lyhyt selitys:
+   - Mika kirja
+   - Mistakirjan sivuilta hakemisto on
+   - Kaytitko tekoalya (kylla, esim. Claude 4.7 + tama tyonkulkuohje)
+   - Tarkistitko alkuperaisesta (kylla / osittain / ei)
+
+5. Veda .txt-tiedosto viestin paalle tai klikkaa "Attach files"
+   ja valitse tiedosto
+
+6. Laheta viesti
+
+JOS SINULLA EI OLE GITHUB-TUNNUSTA, voit lahettaa tiedoston
+sahkopostitse osoitteeseen luupilotti@gmail.com.
+
+================================================================
+TARKISTUSLISTA ENNEN LAHETYSTA
+================================================================
+
+[ ] Tiedosto on .txt-muodossa, ei .md tai .docx
+[ ] Tiedosto on UTF-8-koodattu (a, o, a nakyvat oikein)
+[ ] Lahdetiedot sisaltavat: tekija, vuosi, teos, julkaisija
+[ ] ISBN tai ISSN mainittu jos saatavilla
+[ ] Hakemiston sivut mainittu (mista mihin)
+[ ] Selitysmerkit dokumentoitu KIRJAN OMAN OHJEEN MUKAAN
+[ ] Hakemisto on AAKKOSJARJESTYKSESSA, ei sivuittain
+[ ] Epavarmat kohdat merkitty huomautuksin
+[ ] Tekoalyn kaytto mainittu (mika tyokalu, mihin tarkoitukseen)
+[ ] Tarkistettu visuaalisesti alkuperaisista kuvista
+[ ] Painovirheet sailytetty kirjan mukaisina, merkitty huomautukseen
+
+================================================================
+LISENSSI JA OIKEUDET
+================================================================
+
+Lahettamalla tama tiedosto Discussionsiin suostut siihen, etta
+aineisto voidaan julkaista osana taitoa Creative Commons
+Attribution 4.0 International (CC BY 4.0) -lisenssilla.
+
+Sailytat tekijyytesi aineistoon. Sinut mainitaan taidon
+CHANGELOG.md:ssa tai kohdetiedoston alussa kontribuution
+laajuuden mukaan.
+
+Et saa lahettaa aineistoa, jonka tekijanoikeuksia et hallitse,
+tai joka on toisen suojaaman aineiston merkittavaa kopiointia
+(kokonaisia sivuja, kuvia, laajoja sitaatteja).
+
+Hakemistotieto (alus X mainittu sivulla Y) ei paasaantoisesti
+ole tekijanoikeudellisesti suojattua, mutta jaa itse laatimasi
+hakemisto - ala laheta valokuvia tai skannauksia kirjan sivuista.
+
+================================================================
+VERSIONHISTORIA
+================================================================
+
+2026.05.18.01 - Osallistujan versio
+
+  Ensimmainen versio joka on tarkoitettu osallistujille (ei
+  yllapitajalle). Synkronoitu CONTRIBUTING.md v 2026.05.18.01:n
+  kanssa (Discussions-kanava, .txt-tiedostomuoto, CC BY 4.0).
+
+  Erottuu yllapitajan vastaavasta tyonkulusta
+  (kirjan-indeksointi-tyonkulku.md) seuraavasti:
+
+  - Tuottaa yhden .txt-tiedoston, ei skillin sisaista
+    .md-rakennetta
+  - Ei kasita SKILL.md:n, CHANGELOG.md:n, eika
+    skill-paketin paivitysta
+  - Ei kasita duplikaattitarkistusta (yllapitaja tekee sen
+    vastaanoton jalkeen)
+  - Ei kayta komentorivia tai bash-skripteja
+  - Lopputulos lahetetaan Discussionsiin, ei vieda
+    references/-kansioon
+
+  Yllapitajan vastaava tyonkulku (alkuperainen versio) jatkaa
+  rinnakkaisena Santtu Ahosen omaa indeksointityota varten.
+
+================================================================
