@@ -314,9 +314,10 @@ Lahettamalla tama tiedosto Discussionsiin suostut siihen, etta
 aineisto voidaan julkaista osana taitoa Creative Commons
 Attribution 4.0 International (CC BY 4.0) -lisenssilla.
 
-Sailytat tekijyytesi aineistoon. Sinut mainitaan taidon
-CHANGELOG.md:ssa tai kohdetiedoston alussa kontribuution
-laajuuden mukaan.
+Sailytat tekijyytesi aineistoon. Sinut mainitaan osallistumisen
+laajuuden mukaan: pienista korjauksista maininta seuraavan version
+julkaisutiedoissa, uudesta hakemistosta maininta kohdetiedoston
+alussa taidon sisalla.
 
 Et saa lahettaa aineistoa, jonka tekijanoikeuksia et hallitse,
 tai joka on toisen suojaaman aineiston merkittavaa kopiointia
@@ -326,30 +327,14 @@ Hakemistotieto (alus X mainittu sivulla Y) ei paasaantoisesti
 ole tekijanoikeudellisesti suojattua, mutta jaa itse laatimasi
 hakemisto - ala laheta valokuvia tai skannauksia kirjan sivuista.
 
+Lisenssin tayden suomenkielisen tekstin loydat repon juuresta:
+LICENSE.fi (tai osoitteesta creativecommons.org/licenses/by/4.0/
+legalcode.fi).
+
 ================================================================
 VERSIONHISTORIA
 ================================================================
 
-2026.05.18.01 - Osallistujan versio
-
-  Ensimmainen versio joka on tarkoitettu osallistujille (ei
-  yllapitajalle). Synkronoitu CONTRIBUTING.md v 2026.05.18.01:n
-  kanssa (Discussions-kanava, .txt-tiedostomuoto, CC BY 4.0).
-
-  Erottuu yllapitajan vastaavasta tyonkulusta
-  (kirjan-indeksointi-tyonkulku.md) seuraavasti:
-
-  - Tuottaa yhden .txt-tiedoston, ei skillin sisaista
-    .md-rakennetta
-  - Ei kasita SKILL.md:n, CHANGELOG.md:n, eika
-    skill-paketin paivitysta
-  - Ei kasita duplikaattitarkistusta (yllapitaja tekee sen
-    vastaanoton jalkeen)
-  - Ei kayta komentorivia tai bash-skripteja
-  - Lopputulos lahetetaan Discussionsiin, ei vieda
-    references/-kansioon
-
-  Yllapitajan vastaava tyonkulku (alkuperainen versio) jatkaa
-  rinnakkaisena Santtu Ahosen omaa indeksointityota varten.
+2026.05.18.01 - Ensimmainen julkaistu versio osallistujille.
 
 ================================================================
