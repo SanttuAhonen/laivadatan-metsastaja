@@ -107,15 +107,19 @@ GitHubiin muiden harrastajien luettavaksi. Se on jo arvoa sinänsä.
 
 ## Kiitokset ja lisenssi
 
-Sinut mainitaan kontribuution laajuuden mukaan: pienistä korjauksista
-maininta `CHANGELOG.md`:ssä, uudesta hakemistosta maininta
-kohdetiedoston alussa, merkittävästä kokonaisuudesta maininta
-README:n kiitososiossa. Voit halutessasi osallistua myös pseudonyymilla
-tai pelkalla GitHub-tunnuksella.
+Sinut mainitaan osallistumisen laajuuden mukaan: pienistä korjauksista
+maininta seuraavan version julkaisutiedoissa, uudesta hakemistosta
+maininta kohdetiedoston alussa taidon sisällä, merkittävästä
+kokonaisuudesta maininta README:n kiitososiossa. Voit halutessasi
+osallistua myös pseudonyymilla tai pelkalla GitHub-tunnuksella.
 
 Lähetetyt aineistot julkaistaan osana taitoa **Creative Commons
 Attribution 4.0 International (CC BY 4.0)** -lisenssillä, samalla
 lisenssillä kuin taito itse. Säilytät tekijyytesi.
+
+Lisenssin täysi teksti on luettavissa repossa: [LICENSE](./LICENSE)
+(englanti, kanoninen) ja [LICENSE.fi](./LICENSE.fi) (suomenkielinen
+virallinen käännös).
 
 
 ## Yhteystiedot
