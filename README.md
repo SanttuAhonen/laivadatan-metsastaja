@@ -231,14 +231,13 @@ oikeudenhaltijoilla — ks. tekijätiedot kunkin tiedoston alussa.
 
 ## Kehitys ja palaute
 
-Parannusehdotukset, korjaukset ja lisäykset ovat tervetulleita.
+Parannusehdotukset, korjaukset, uudet hakemistot ja muut lisäykset ovat
+tervetulleita. Ks. tarkemmat ohjeet [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-- **Sähköposti:** luupilotti@gmail.com — voit pyytää myös uudempaa,
-  päivitettyä versiota
-- **GitHub Issues:** käytä tämän repon Issues-välilehteä
-
-Pull requestit hyväksytään harkiten — erityisesti hakukaava- ja
-lähdeluettelopäivitykset ovat arvokkaita.
+- **Discussions:** [github.com/SanttuAhonen/laivadatan-metsastaja/discussions](https://github.com/SanttuAhonen/laivadatan-metsastaja/discussions)
+  — ensisijainen kanava kaikenlaiseen osallistumiseen
+- **Sähköposti:** luupilotti@gmail.com — jos GitHub-tunnusta ei ole,
+  tai voit pyytää myös uudempaa, päivitettyä versiota tätä kautta
 
 ---
 
@@ -259,7 +258,11 @@ Ehdolla että:
   mahdolliset muutokset on ilmoitettava selkeästi. Tekijätietoja ei saa
   poistaa eikä peittää.
 
-Lisenssin täysi teksti: https://creativecommons.org/licenses/by/4.0/legalcode
+Lisenssin täysi teksti:
+- englanniksi (kansainvälisesti kanoninen): https://creativecommons.org/licenses/by/4.0/legalcode
+- suomeksi (virallinen käännös): https://creativecommons.org/licenses/by/4.0/legalcode.fi
+
+Repon juuressa: [LICENSE](./LICENSE) (englanti) ja [LICENSE.fi](./LICENSE.fi) (suomi).
 
 > **Huom.** CC BY 4.0 koskee taidon metodologiaa, rakennetta ja sen pohjaksi
 > kirjoitettuja ohjeita. Sisällytettyjen hakemistojen tekijänoikeudet
