@@ -67,39 +67,61 @@ joka on tarkoitettu lisättäväksi taitoon. Käytännössä:
 **Pull Requestin täytyy:**
 
 1. Lisätä tiedostoja **vain** kansioon `ehdotukset/` (luodaan tarvittaessa).
-2. Olla **pelkkiä tekstitiedostoja (`.txt`)**. Ei Word-, PDF-, Excel-,
-   kuva- tai muita tiedostomuotoja. Ei myöskään Markdown-muotoa (`.md`),
-   vaikka tämä ohjedokumentti onkin sellainen. Perustelu alla.
-3. Käyttää tiedostonimimallia `ehdotus-<kuvaava-nimi>.txt` —
-   esim. `ehdotus-laiva-lehti-1985.txt` tai
-   `ehdotus-pakkanen-2018-virhelista.txt`.
+2. Olla **pelkkiä tekstitiedostoja: `.txt` tai `.csv`**. Ei Word-, PDF-,
+   Excel- (`.xlsx`), kuva- tai muita tiedostomuotoja. Ei myöskään
+   Markdown-muotoa (`.md`), vaikka tämä ohjedokumentti onkin sellainen.
+   Perustelu alla.
+3. Käyttää tiedostonimimallia `ehdotus-<kuvaava-nimi>.txt` tai
+   `ehdotus-<kuvaava-nimi>.csv` — esim. `ehdotus-laiva-lehti-1985.txt`
+   tai `ehdotus-pakkanen-2018-virhelista.csv`.
 4. Olla yksi PR per lähde. Älä niputa useita kirjoja yhteen PR:ään.
 5. Sisältää lähdetiedot luvun 3 mallin mukaan.
 6. Olla **`main`-haaran päällä** ja siisti (yksi commit, selkeä viesti).
 
-**Miksi `.txt` eikä `.md`, Word tai PDF:**
+**Miksi vain tekstimuodot (`.txt`, `.csv`):**
 
-- Tekstitiedoston voi tehdä millä tahansa ohjelmalla: Windowsin
-  Muistio (Notepad), Wordin "Tallenna nimellä → Pelkkä teksti",
-  TextEdit Macilla, mikä tahansa puhelimen muistiinpanosovellus.
-  Ei tarvitse osata uusia merkintätapoja.
-- Tekstitiedoston voi avata ja tarkistaa millä tahansa ohjelmalla
-  riskittä — siinä ei voi olla piilotettua sisältöä tai
-  automaattisesti aktivoituvia linkkejä.
-- Wordin, PDF:n tai kuvien lähettäminen tekee ylläpitäjän tarkistus-
-  ja muuntotyöstä raskaampaa eikä tuo lisäarvoa välivaiheen
+- Voit tehdä ne millä tahansa ohjelmalla: Windowsin Muistio (Notepad),
+  Word ("Tallenna nimellä → Pelkkä teksti"), Excel ("Tallenna
+  nimellä → CSV"), Google Sheets, LibreOffice Calc tai muistiinpano-
+  sovellus puhelimessa.
+- Voit avata ja tarkistaa ne millä tahansa ohjelmalla riskittä —
+  niissä ei voi olla piilotettua sisältöä tai automaattisesti
+  aktivoituvia linkkejä.
+- Wordin, PDF:n, Excelin tai kuvien lähettäminen tekee ylläpitäjän
+  tarkistus- ja muuntotyöstä raskaampaa eikä tuo lisäarvoa välivaiheen
   aineistolle.
 
-Jos sinulla on aineisto Wordissa tai muistiinpanoissa, tallenna se
-tekstimuotoon näin:
+### 2.2.1 Tallennusohjeet eri ohjelmista
 
-- **Word:** Tiedosto → Tallenna nimellä → Tiedostomuoto: *Pelkkä
-  teksti (.txt)*
-- **Mac TextEdit:** Muoto → Muunna pelkäksi tekstiksi → Tallenna
-- **Selain / muistiinpanot:** kopioi teksti ja liitä Muistioon,
-  tallenna `.txt`:nä
+**Microsoft Word:**
+Tiedosto → Tallenna nimellä → Tiedostomuoto: *Pelkkä teksti (.txt)*.
+Jos Word kysyy koodausta, valitse **Unicode (UTF-8)**.
 
-### 2.2.1 Jos et osaa tehdä PR:ää tai tekstitiedostoa
+**Microsoft Excel** (tai Google Sheets, LibreOffice Calc):
+Tiedosto → Tallenna nimellä → Tiedostomuoto: **CSV UTF-8 (pilkulla
+eroteltu) (\*.csv)**. Tämä on **tärkein vaihtoehto** suomalaisille
+aineistoille — se säilyttää ääkköset (ä, ö, å) oikein.
+
+> **Varoitus ääkkösistä:** Älä valitse pelkkää "CSV" tai "Teksti
+> (Sarkaimin eroteltu)" ilman UTF-8:aa. Suomenkielisessä Excelissä
+> nämä tallentavat usein vanhalla ANSI-koodauksella, jolloin "Aallotar",
+> "Höyrylaiva" ja "Päijänne" voivat näkyä ylläpitäjälle vääristyneinä
+> (esim. "H?yrylaiva" tai "Aallotar"). **Valitse aina UTF-8.**
+
+> **Suomalainen Excel ja erotin:** Suomenkielisessä Excelissä CSV
+> käyttää usein puolipistettä (`;`) eikä pilkkua (`,`) erottimena,
+> koska pilkku on desimaalierotin. Tämä on **ok** — ylläpitäjä
+> käsittelee molemmat. Älä yritä korjata sitä käsin.
+
+**Mac TextEdit:**
+Muoto → Muunna pelkäksi tekstiksi → Tallenna. Tallennusikkunassa
+valitse **Unicode (UTF-8)** koodaukseksi.
+
+**Selain tai puhelimen muistiinpanot:**
+Kopioi teksti ja liitä Muistioon (Windows) tai TextEditiin (Mac),
+tallenna `.txt`:nä UTF-8-koodauksella.
+
+### 2.2.2 Jos et osaa tehdä PR:ää tai tekstitiedostoa
 
 Tämä on täysin kelvollinen tilanne. Avaa silloin **Issue** (luku 2.1),
 liitä aineisto suoraan viestin sisään (kopioi-liimaa) ja kerro:
@@ -200,10 +222,60 @@ HUOMAUTUKSET
     ja mitä itse tarkistit (ks. luku 4)
 ```
 
-Jos sinulla on aineisto jo valmiina jossakin muodossa (taulukko,
-luettelo paperilla, käsinkirjoitettu vihko), **älä murehdi mallia
-liian tarkasti**. Tärkeintä on lähdetiedot ja sivunumerot.
-Toimita aineisto siinä muodossa kuin se on, niin selvitetään
+### 3.1 Vaihtoehto: taulukkomuotoinen CSV
+
+Jos olet koonnut aineistosi Exceliin, Google Sheetsiin tai
+LibreOffice Calciin, **älä muunna sitä käsin** yllä olevaan
+vapaatekstimalliin. Tallenna taulukko sellaisenaan CSV UTF-8
+-muodossa (ks. luku 2.2.1) ja lisää **erillinen pieni tekstitiedosto**
+lähdetiedoille.
+
+Esimerkki: PR voi sisältää kaksi tiedostoa:
+
+```
+ehdotukset/ehdotus-laiva-lehti-1985-lahdetiedot.txt
+ehdotukset/ehdotus-laiva-lehti-1985.csv
+```
+
+**Lähdetiedot.txt** sisältää saman pään kuin yllä:
+
+```
+EHDOTUS: Laiva-lehti 1985
+
+LÄHDETIEDOT
+
+  Tekijä(t):      Laiva-lehden toimituskunta
+  Vuosi:          1985
+  Teos:           Laiva-lehti, vuosikerta 1985 (numerot 1-6)
+  Julkaisija:     Suomen Laivahistoriallinen Yhdistys ry, Helsinki
+  ISSN:           0359-1581
+  ...
+```
+
+**Aineisto.csv** sisältää taulukkomuotoisen sisällön (esim. otsikkorivi
++ yksi rivi per alus tai per maininta):
+
+```
+alus;rakennusvuosi;tyyppi;vesistö;sivu;numero;huomautus
+Aallotar;1881;höyrylaiva;Saimaa;47;3/1985;
+Aallotar;1881;höyrylaiva;Saimaa;89;3/1985;haaksirikko
+Aallotar;1909;höyrylaiva;Päijänne;47;3/1985;varustaja Y
+Ahti I;1898;höyryhinaaja;Näsijärvi;22;4/1985;
+Ahti I;1898;höyryhinaaja;Näsijärvi;56-58;4/1985;
+```
+
+Sarakkeiden määrää ja nimiä **ei ole pakotettu** — käytä niitä joita
+tarvitset omassa aineistossasi. Tärkeintä on että otsikkorivillä
+sarakkeiden nimet ovat selvät ja erotin on yhtenäinen koko tiedostossa
+(joko `;`, `,` tai sarkain).
+
+### 3.2 Jos aineisto on jossakin muussa muodossa
+
+Jos sinulla on aineisto jo valmiina jossakin muodossa (paperilla,
+käsinkirjoitettu vihko, vanhassa Word-tiedostossa, paperilappujen
+kasassa), **älä murehdi mallia liian tarkasti**. Tärkeintä on
+lähdetiedot ja sivunumerot. Toimita aineisto siinä muodossa kuin
+se on (mieluiten tekstinä, ks. luku 2.2.1), niin selvitetään
 yhdessä loppu.
 
 ---
