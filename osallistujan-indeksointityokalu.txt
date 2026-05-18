@@ -4,7 +4,7 @@ Kirjan alus- tai laivahakemiston indeksointi valokuvista
 ================================================================
 Projekti: laivadatan-metsastaja
 Yllapitaja: Santtu Ahonen
-Versio: 2026.05.18.01
+Versio: 2026.05.18.02
 
 ================================================================
 LATAUSOHJE TEKOALYLLE
@@ -335,6 +335,7 @@ legalcode.fi).
 VERSIONHISTORIA
 ================================================================
 
+2026.05.18.02 - LIsenssiattribuutiot korjattu
 2026.05.18.01 - Ensimmainen julkaistu versio osallistujille.
 
 ================================================================
