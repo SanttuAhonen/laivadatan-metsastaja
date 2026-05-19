@@ -87,9 +87,16 @@ bibliografiset tiedot on kirjattu reference-tiedostojen alkuun.
 
 ### Anthropic Claude.ai (web tai asennettu sovellus)
 
-1. Lataa repon zip-paketti (tuo .skill on oikeasti .zip): **Code → Download .skill**
-2. Avaa Claude.ai → **Settings → Capabilities → Skills**
-3. Lisää ladattu .skill eli zip-tiedosto + -napin avulla.
+1. **Lataa [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill)** (tuo on oikeasti .zip) koneellesi. 
+2. Avaa Claude.ai → **Customize → Skills → "+" → Upload a Skill**
+
+#### Käyttö
+
+Voit ottaa asennetun skillin chatissa käyttöösi / -komennon avulla. Claude antaa keskustelussa tuolla /-komennolla valikon josta Laivadatan Metsästäjä on valittavissa.
+
+#### Päivitykset
+
+Lataa uusi laivadatan-metsastaja.skill Claudeen, Claude kysyy haluatko päivittää vanhan Skillin. Huomaa, että tiedostonimen pitää olla sama kuin edellisellä latauksella.
 
 ### Anthropic Claude Code
 
@@ -100,33 +107,24 @@ git clone https://github.com/SanttuAhonen/laivadatan-metsastaja \
 
 ### Microsoft 365 Copilot Chat
 
-Microsoft 365 Copilot Chatissa tätä skillia ei lisätä tai asenneta teknisesti, mutta sitä voidaan käyttää toimintamallina ja asiantuntijaroolina Copilotin ohjeistamiseen.
-Käyttö tapahtuu pyytämällä Copilotia toimimaan Laivadatan Metsästäjän roolissa ja hyödyntämään tämän repositoryn dokumentaatiota ajattelunsa ja vastaustensa pohjana. Esimerkiksi:
+[laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) ja liitä se chattiviestiin jossa pyydät Copilottia jatkokeskustelun ajan toimimaan Laivadatan Metsästäjän roolissa ja hyödyntämään tämän repositoryn dokumentaatiota ajattelunsa ja vastaustensa pohjana. Microsoft 365 Copilot Chatissa tätä skillia ei siis lisätä tai asenneta teknisesti samoin kuin Claudessa.
 
-*Toimi "Laivadatan Metsästäjä" ‑agenttina. Hyödynnä tämän repositoryn toimintamallia ja auta löytämään, yhdistämään ja arvioimaan laivoihin ja merenkulkuun liittyvää dataa.*
-
-Copilotilta voi tämän jälkeen kysyä apua esimerkiksi:
-- historiallisten tai nykyisten aluslähteiden löytämiseen
-- eri kielillä julkaistun laivadatan tunnistamiseen
-- datalähteiden luotettavuuden arviointiin
-- ideoihin, mistä ja miten tietoa kannattaa etsiä
-
-Skill toimii Copilot Chatissa prompt‑pohjaisena asiantuntijamallina, ei erillisenä agenttina, ja sen tehokkuus perustuu siihen, että Copilotille kerrotaan selkeästi tämä repository toimintakehyksenä.
+Esimerkiksi: *Toimi "Laivadatan Metsästäjä" ‑agenttina. Hyödynnä liitetyn laivadatan-metsastaja.skill  toimintamallia ja auta minua....*
 
 #### Päivitykset
 
-Lataa uusin .skill-versio ja korvaa aiempi tarvittaessa.
+Lataa uusin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) versio ja käytä sitä chatissa kuten ennenkin.
 
 ### OpenAI ChatGPT
 
-Tämän projektin .skill-paketin voi liittää omaan GPT:hen ChatGPT:ssä.
+Tämän projektin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) -paketin voi liittää omaan GPT:hen ChatGPT:ssä.
 
 #### Asennus
-- Lataa uusin .skill-tiedosto repositorysta
+- Lataa uusin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) -tiedosto koneellesi
 - Avaa ChatGPT
 - Siirry kohtaan Explore GPTs → Create
 - Valitse Configure
-- Lisää .skill-tiedosto GPT:hen
+- Lisää laivadatan-metsastaja.skill -tiedosto GPT:hen
 
 #### Käyttö
 
@@ -139,7 +137,7 @@ Lataa uusin .skill-versio ja korvaa aiempi tarvittaessa.
 ### Muut tekoälyalustat
 
 Taito noudattaa avointa [Agent Skills -standardia](https://agentskills.io).
-`SKILL.md`-tiedosto toimii sellaisenaan muissa yhteensopivissa järjestelmissä.
+`[laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill)`-tiedosto toimii sellaisenaan muissa yhteensopivissa järjestelmissä.
 Katso oman alustasi asennusohjeet.
 
 ---
