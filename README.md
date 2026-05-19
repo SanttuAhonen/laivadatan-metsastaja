@@ -19,8 +19,15 @@ karikoista (samannimiset alukset, nimenvaihdokset, OCR-virheet, sitaattiketjut).
 
 ### Mitä taito osaa
 
+Taito on lähdeaineistojensa takia parhaimmillaan **1980-luvun ja sitä
+vanhempien alusten** parissa — erityisesti höyrylaivojen sekä nykyisten
+dieselalusten, jotka ovat aiemmin kulkeneet höyryllä — historian ja
+taustojen selvittelyssä. Työnkulku ja lähdekatalogi soveltuvat silti
+myös muunlaisten alusten tutkimukseen, vaikka paikallinen hakemistopeitto
+on niiden osalta ohuempi.
+
 - Ehdottaa hakukaavoja Finnaan, digi.kansalliskirjasto.fi:hin, ELKAan ja laivadata.fi:hin
-- Tarkistaa paikalliset hakemistot ennen verkkohakua (14 julkaisua, ~7 000+ alusmainintaa)
+- Tarkistaa paikalliset hakemistot ennen verkkohakua (16 julkaisua, ~7 500+ alusmainintaa)
 - Varoittaa samannimisistä aluksista (Halla I–XVII, Aallotar 1–9, Saimaa 1–6, Tornator I–IV, Ahti ×4, Kuopio ×4, Wellamo ×4…)
 - Selittää Korsteenin hakemistojen lyhennejärjestelmän
 - Rakentaa yhtenäisen alusprofiilipohjan viittauskäytäntöineen
@@ -29,7 +36,7 @@ karikoista (samannimiset alukset, nimenvaihdokset, OCR-virheet, sitaattiketjut).
 - Tulkitsee aikalaiskirjoitusasujen variantteja ja vieraskielisten nimien suomennoksia
 - Selittää Suomen alusrekisterien historian (1874→), kolmen rinnakkaisen rekisterin
   rakenteen sekä mikrotonniston (alle 19 nrt) rekisteripuutteet
-- Hakee mediajuttuja Yleltä, Helsingin Sanomista, Aamulehdestä, Turun Sanomista ja Savon Sanomista
+- Tuntee kansainväliset alusten tunnistejärjestelmät (IMO, MMSI, ITU-kutsumerkit, ENI)
 - Ohjaa pro gradujen ja muiden opinnäytetöiden hakuun yliopistojen avoimista
   julkaisuarkistoista (JYX, Trepo, Helda, Doria jne.)
 
@@ -49,33 +56,34 @@ karikoista (samannimiset alukset, nimenvaihdokset, OCR-virheet, sitaattiketjut).
 Taitoon on sisällytetty **kirjojen, väitöskirjojen, gradujen, lehtien
 ja telakkakirjojen omat alus-, henkilö- ja lähdehakemistot** — eli
 tieto siitä, mitä alusta käsitellään missä julkaisussa ja millä
-sivulla. **Kirjojen, lehtien tai muiden julkaisujen sisältöä ei täällä ole mukana, itse sisältöön tarvitset 
-sen alkuperäisen julkaisun**. Mutta jo tieto siitä mistä tuota tietoa pitäisi etsiä säästää
-tunteja kirjasto- ja antikvariaattityötä.
+sivulla. **Kirjojen, lehtien tai muiden julkaisujen sisältöä ei täällä
+ole mukana — itse sisältöön tarvitset alkuperäisen julkaisun**. Mutta
+jo tieto siitä, missä julkaisussa alus mainitaan, säästää tunteja
+kirjasto- ja antikvariaattityötä.
 
 **Numeroina:**
 
-- **14 indeksoitua julkaisua** — 11 kirjaa, yksi väitöskirja (Kivinen 2016),
+- **16 indeksoitua julkaisua** — 13 kirjaa, yksi väitöskirja (Kivinen 2016),
   yksi pro gradu (Koponen 1988) ja yhden telakan tilauskirjapari (Pirttiniemi /
   laivadata.fi)
-- **~7 000+ alusmainintaa** yhteensä — sis. ~16 000 rivin
+- **~7 500+ alusmainintaa** yhteensä — sis. ~16 000 rivin
   Korsteeni-laivahakemisto (Uotila), Pakkasen 887 alusta, Sipilän ~1 800,
-  Pirttiniemen 696, Karttusen ~870 ja kymmenen muuta telakka-, vesistö-
-  ja yleishakemistoa
+  Pirttiniemen 696, Karttusen ~870, Tuomi-Nikulan ~960 ja kymmenen muuta
+  telakka-, vesistö- ja yleishakemistoa
 - **~2 200+ henkilöä rooleittain** — kapteenit, varustajat, telakka-
   yhtiöiden toimijat (Karttunen, Oulun Konepaja, Wahl, Nummela)
 - **2 opinnäytetyön oma sisältö** indeksoituna + Laiva-lehden
   pro gradu / lisensiaatti / käsikirjoitus -bibliografia (Kivinen 2026)
 - **Laiva-lehden sisällysluettelo 1/2001–1/2026** (92 lehteä)
-- **Korsteeni-lehden sisällysluettelot 1986-2025** (Snellman, ~1 630 r.),
+- **Korsteeni-lehden sisällysluettelot 1986–2025** (Snellman, ~1 630 r.)
 - **9 sanomalehden hakuohjeet** — Yle, HS, Aamulehti, TS, SS,
   Etelä-Saimaa, Karjalainen, Warkauden Lehti, Iisalmen Sanomat
 - **20+ verkkohakukohdetta** — Finna, digi.kansalliskirjasto.fi,
   ELKA/Astia, Kansallisarkisto, laivadata.fi, riihisaari.info ja
   yliopistojen avoimet julkaisuarkistot (JYX, Trepo, Helda, UTUPub,
-  UEF, Jultika, Aaltodoc, LUTPub, Osuva, Doria, Lauda) sekä liuta
-  laivaharrastajien, yhdistysten ja båtålogien www-sivuja ja
-  keskustelufoorumeita. Sekä tietty avoimet haut netistä.
+  UEF, Jultika, Aaltodoc, LUTPub, Osuva, Doria, Lauda) sekä joukko
+  laivaharrastajien, yhdistysten ja botologien www-sivuja ja
+  keskustelufoorumeita. Sen lisäksi tietysti yleishaut verkossa.
 
 Yksityiskohtainen tiedostokohtainen sisältö löytyy alta
 [Sisältö-osasta](#sisältö). Kunkin lähteen alkuperäiset kokoajat ja
@@ -87,16 +95,16 @@ bibliografiset tiedot on kirjattu reference-tiedostojen alkuun.
 
 ### Anthropic Claude.ai (web tai asennettu sovellus)
 
-1. **Lataa [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill)** (tuo on oikeasti .zip) koneellesi. 
+1. **Lataa [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/raw/main/laivadatan-metsastaja.skill)** (`.skill`-tiedosto on käytännössä `.zip`-paketti) koneellesi.
 2. Avaa Claude.ai → **Customize → Skills → "+" → Upload a Skill**
 
 #### Käyttö
 
-Voit ottaa asennetun skillin chatissa käyttöösi / -komennon avulla. Claude antaa keskustelussa tuolla /-komennolla valikon josta Laivadatan Metsästäjä on valittavissa.
+Voit ottaa asennetun skillin chatissa käyttöösi /-komennon avulla. Claude antaa keskustelussa tuolla /-komennolla valikon josta Laivadatan Metsästäjä on valittavissa.
 
 #### Päivitykset
 
-Lataa uusi laivadatan-metsastaja.skill Claudeen, Claude kysyy haluatko päivittää vanhan Skillin. Huomaa, että tiedostonimen pitää olla sama kuin edellisellä latauksella.
+Lataa uusi `laivadatan-metsastaja.skill` Claudeen, Claude kysyy haluatko päivittää vanhan Skillin. Huomaa, että tiedostonimen pitää olla sama kuin edellisellä latauksella.
 
 ### Anthropic Claude Code
 
@@ -105,38 +113,30 @@ git clone https://github.com/SanttuAhonen/laivadatan-metsastaja \
   ~/.claude/skills/laivadatan-metsastaja
 ```
 
-### Microsoft 365 Copilot Chat
+### OpenAI ChatGPT, Microsoft 365 Copilot ja muut tekoälyalustat
 
-[laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) ja liitä se chattiviestiin jossa pyydät Copilottia jatkokeskustelun ajan toimimaan Laivadatan Metsästäjän roolissa ja hyödyntämään tämän repositoryn dokumentaatiota ajattelunsa ja vastaustensa pohjana. Microsoft 365 Copilot Chatissa tätä skillia ei siis lisätä tai asenneta teknisesti samoin kuin Claudessa.
+Agent Skills on avoin alustariippumaton standardi
+([agentskills.io](https://agentskills.io)), jota yhä useammat tekoälyalustat
+tukevat. Tuen toteutus ja käyttötapa kuitenkin vaihtelevat alustakohtaisesti
+ja muuttuvat nopeasti. **Paras ohje on usein kysyä avustajalta itseltään**,
+miten Agent Skills -muotoinen paketti otetaan käyttöön juuri sillä alustalla
+ja sillä tilauksellasi.
 
-Esimerkiksi: *Toimi "Laivadatan Metsästäjä" ‑agenttina. Hyödynnä liitetyn laivadatan-metsastaja.skill  toimintamallia ja auta minua....*
+Liitä [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/raw/main/laivadatan-metsastaja.skill) chattiviestiin ja pyydä esimerkiksi:
 
-#### Päivitykset
+> *Toimi "Laivadatan Metsästäjä" -agenttina. Liitteenä on avoimen
+> Agent Skills -standardin ([agentskills.io](https://agentskills.io))
+> mukainen taitopaketti. Miten tämä otetaan käyttöön tällä alustalla,
+> ja toimisitko sen ohjeiden mukaisesti tämän keskustelun ajan?*
 
-Lataa uusin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) versio ja käytä sitä chatissa kuten ennenkin.
-
-### OpenAI ChatGPT
-
-Tämän projektin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) -paketin voi liittää omaan GPT:hen ChatGPT:ssä.
-
-#### Asennus
-- Lataa uusin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) -tiedosto koneellesi
-- Avaa ChatGPT
-- Siirry kohtaan Explore GPTs → Create
-- Valitse Configure
-- Lisää laivadatan-metsastaja.skill -tiedosto GPT:hen
-
-#### Käyttö
-
-Tallenna GPT ja aloita käyttö – voit nyt hakea ja käsitellä laivadataa suoraan ChatGPT:ssä.
+Avustaja osaa tyypillisesti ohjata oman alustansa käytäntöihin — esimerkiksi
+ChatGPT:llä on Skills-välilehti ja Custom GPT -knowledge-osio, ja
+Microsoft 365 Copilot Coworkilla on oma `Documents/Cowork/skills/`
+-kansiokäytäntö OneDrivessä.
 
 #### Päivitykset
 
-Lataa uusin .skill-versio ja korvaa aiempi tarvittaessa.
-
-### Muut tekoälyalustat
-
-Taito noudattaa avointa [Agent Skills -standardia](https://agentskills.io). [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) -tiedosto toimii sellaisenaan muissa yhteensopivissa järjestelmissä. Katso oman alustasi asennusohjeet (tai kysy siltä ohjeet tuon käyttämiseen).
+Lataa uusin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/raw/main/laivadatan-metsastaja.skill) ja korvaa aiempi alustasi ohjeiden mukaisesti.
 
 ---
 
@@ -155,6 +155,8 @@ references/
   hakukaavat-tutkimukset.md                    — Yliopistojen avoimet julkaisuarkistot (JYX, Trepo, Helda…)
   laivanrakennus-historia.md                   — Telakat, konepajat, aluksen identiteetti
   alusrekisterien-historia.md                  — Suomen alusrekisterit 1874→, mikrotonniston puutteet
+  vesikulkuneuvon-rekisteritiedot.md           — Traficomin korttitodistus: kentät a1–a16/b1–b5/c1–c3
+  kansainvaliset-tunnistejarjestelmat.md       — IMO, MMSI, ITU-kutsumerkit, ENI
   lyhenteet-ja-terminologia.md                 — Yleiset laivahistorian lyhenteet ja sanasto
   korsteeni-indeksi-lyhenteet.md               — Korsteenin omat hakemistolyhenteet
   korsteeni-osa-I.md                           — Historialliset maininnat 1986–2025
@@ -165,6 +167,10 @@ references/
   saimaan-100-vuotishistoria-henkilohakemisto.md — Karttunen 1945, henkilöhakemisto
   hoyrylaivamme-1977-laivahakemisto.md         — Riimala 1977, alusluettelo
   hoyrylaivamme-1977-lahteet.md                — Riimala 1977, kirjan lähteet
+  hoyrymurtajien-aika-sisallys.md              — Laurell 1992, sisällysluettelo + laivanavigaatiotaulukko
+  hoyrymurtajien-aika-lahteet.md               — Laurell 1992, kirjan lähteet
+  punatahtisen-sotalipun-alla-laivahakemisto.md — Tuomi-Nikula 2000, takakannen alushakemisto (~960 r.)
+  punatahtisen-sotalipun-alla-lahteet.md       — Tuomi-Nikula 2000, lähdeluettelo
   hoyrylaivojen-suomi-alushakemisto.md         — Pakkanen 2018, alushakemisto
   hoyrylaivojen-suomi-lahteet.md               — Pakkanen 2018, kirjan lähteet
   kelluva-kulttuuriperinto-laivahakemisto.md   — Sipilä ym. 2019, alushakemisto
@@ -193,9 +199,6 @@ references/
   lahteet.md                                   — Hakulähteiden täysi katalogi
 ```
 
-Hakemistoaineistojen tekijänoikeudet säilyvät niiden alkuperäisillä
-oikeudenhaltijoilla — ks. tekijätiedot kunkin tiedoston alussa.
-
 ---
 
 ## Tausta ja kiitokset
@@ -221,7 +224,7 @@ ovat toimineet oivana inspiraationa ja lähteenä tämän skillin versioille:
   digitoidut tilauskirjat, avoin data (CC-lisenssi).
 
 Hakemistoaineistojen tekijänoikeudet säilyvät niiden alkuperäisillä
-oikeudenhaltijoilla — ks. tekijätiedot kunkin tiedoston alussa.
+oikeudenhaltijoilla — ks. tekijätiedot kunkin reference-tiedoston alussa.
 
 ---
 
@@ -239,26 +242,9 @@ tervetulleita. Ks. tarkemmat ohjeet [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Lisenssi
 
-© 2026 Santtu Ahonen.
-
-Tämä taito on lisensoitu **Creative Commons Attribution 4.0 International
-(CC BY 4.0)** -lisenssillä.
-
-Saat vapaasti:
-- **jakaa** — kopioida ja levittää materiaalia missä tahansa muodossa
-- **muokata** — remiksata, muuntaa ja rakentaa materiaalin päälle
-- mihin tahansa tarkoitukseen, myös kaupalliseen
-
-Ehdolla että:
-- **Tekijä mainitaan** — alkuperäinen tekijä (Santtu Ahonen), lisenssi ja
-  mahdolliset muutokset on ilmoitettava selkeästi. Tekijätietoja ei saa
-  poistaa eikä peittää.
-
-Lisenssin täysi teksti:
-- englanniksi (kansainvälisesti kanoninen): https://creativecommons.org/licenses/by/4.0/legalcode
-- suomeksi (virallinen käännös): https://creativecommons.org/licenses/by/4.0/legalcode.fi
-
-Repon juuressa: [LICENSE](./LICENSE) (englanti) ja [LICENSE.fi](./LICENSE.fi) (suomi).
+© 2026 Santtu Ahonen. Lisensoitu **Creative Commons Attribution 4.0
+International (CC BY 4.0)** -lisenssillä. Täysi lisenssiteksti repon
+juuressa: [LICENSE](./LICENSE) (englanti) ja [LICENSE.fi](./LICENSE.fi) (suomi).
 
 > **Huom.** CC BY 4.0 koskee taidon metodologiaa, rakennetta ja sen pohjaksi
 > kirjoitettuja ohjeita. Sisällytettyjen hakemistojen tekijänoikeudet
