@@ -136,9 +136,7 @@ Lataa uusin .skill-versio ja korvaa aiempi tarvittaessa.
 
 ### Muut tekoälyalustat
 
-Taito noudattaa avointa [Agent Skills -standardia](https://agentskills.io).
-`[laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill)`-tiedosto toimii sellaisenaan muissa yhteensopivissa järjestelmissä.
-Katso oman alustasi asennusohjeet.
+Taito noudattaa avointa [Agent Skills -standardia](https://agentskills.io). [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivadatan-metsastaja/blob/main/laivadatan-metsastaja.skill) -tiedosto toimii sellaisenaan muissa yhteensopivissa järjestelmissä. Katso oman alustasi asennusohjeet (tai kysy siltä ohjeet tuon käyttämiseen).
 
 ---
 
