@@ -10,7 +10,7 @@
 `laivadatan-metsastaja` on [Agent Skills](https://agentskills.io) -muotoinen taito,
 joka opettaa tekoälyavustajan (Claude tai muu yhteensopiva järjestelmä) toimimaan
 botologian tutkimusapurina. Taito tietää mistä etsiä, miten lähteisiin suhtautua
-ja miten rakentaa luotettava alusprofiili sirpaleisesta lähtöaineistosta.
+ja miten rakentaa luotettava alus- tai henkilöprofiili sirpaleisesta lähtöaineistosta.
 
 Tyypillinen lähtötilanne: sinulla on laivan nimi, vuosiluku ja paikkakunta —
 ja siitä pitäisi rakentaa kokonaiskuva. Taito ohjaa sinut oikeiden
@@ -30,7 +30,7 @@ on niiden osalta ohuempi.
 - Tarkistaa paikalliset hakemistot ennen verkkohakua (16 julkaisua, ~7 500+ alusmainintaa)
 - Varoittaa samannimisistä aluksista (Halla I–XVII, Aallotar 1–9, Saimaa 1–6, Tornator I–IV, Ahti ×4, Kuopio ×4, Wellamo ×4…)
 - Selittää Korsteenin hakemistojen lyhennejärjestelmän
-- Rakentaa yhtenäisen alusprofiilipohjan viittauskäytäntöineen
+- Rakentaa yhtenäisen alus- tai henkilöprofiilin viittauskäytäntöineen (henkilöprofiili: laivurin, kapteenin, konemiehen tai muun laivaväen ura)
 - Tunnistaa lähdeketjuja — erottaa riippumattomat lähteet sitaattiketjuista
 - Ohjaa vesistösiirtojen ja nimenvaihdosten jäljittämisessä
 - Tulkitsee aikalaiskirjoitusasujen variantteja ja vieraskielisten nimien suomennoksia
@@ -74,7 +74,7 @@ kirjasto- ja antikvariaattityötä.
   yhtiöiden toimijat (Karttunen, Oulun Konepaja, Wahl, Nummela)
 - **2 opinnäytetyön oma sisältö** indeksoituna + Laiva-lehden
   pro gradu / lisensiaatti / käsikirjoitus -bibliografia (Kivinen 2026)
-- **Laiva-lehden sisällysluettelo 1/2001–1/2026** (92 lehteä)
+- **Laiva-lehden sisällysluettelo 1/2001–2/2026** (93 merkintää)
 - **Korsteeni-lehden sisällysluettelot 1986–2025** (Snellman, ~1 630 r.)
 - **9 sanomalehden hakuohjeet** — Yle, HS, Aamulehti, TS, SS,
   Etelä-Saimaa, Karjalainen, Warkauden Lehti, Iisalmen Sanomat
@@ -146,10 +146,12 @@ Lataa uusin [laivadatan-metsastaja.skill](https://github.com/SanttuAhonen/laivad
 SKILL.md                                       — Pääohje (tästä tekoäly aloittaa)
 CHANGELOG.md                                   — Versionhistoria
 references/
-  alusprofiili-malli.md                        — Tulostuksen vakiomuoto + viittauskäytännöt
+  alusprofiili-malli.md                        — Aluksen profiilin vakiomuoto + viittauskäytännöt
+  henkiloprofiili-malli.md                     — Henkilön (laivuri, kapteeni, konemies, mestari…) profiilin vakiomuoto
+  tunnistus-valokuvasta.md                     — Aluksen tunnistaminen valokuvasta: työnkulku ja karikot
   hakukaavat.md                                — Hakukaavojen pääindeksi
   hakukaavat-finna.md                          — Finna: URL-rakenne ja suodattimet
-  hakukaavat-digi.md                           — digi.kansalliskirjasto.fi: hakukaavat
+  hakukaavat-kansalliskirjasto.md              — digi.kansalliskirjasto.fi: hakukaavat + XLSX-massatyönkulku
   hakukaavat-arkistot.md                       — ELKA, laivadata.fi (Pirttiniemi), Kansallisarkisto
   hakukaavat-media.md                          — Yle, HS, Aamulehti, TS, SS: hakukaavat ja URL-rakenteet
   hakukaavat-tutkimukset.md                    — Yliopistojen avoimet julkaisuarkistot (JYX, Trepo, Helda…)
@@ -162,7 +164,7 @@ references/
   korsteeni-osa-I.md                           — Historialliset maininnat 1986–2025
   korsteeni-osa-II.md                          — Olemassa olevien höyrylaivojen maininnat
   korsteeni-sisallysluettelo.md                — Korsteeni-lehden otsikkohaku 1986–2025
-  laiva-lehti-sisallysluettelo.md              — Laiva-lehden sisällysluettelo 1/2001–1/2026
+  laiva-lehti-sisallysluettelo.md              — Laiva-lehden sisällysluettelo 1/2001–2/2026
   saimaan-100-vuotishistoria-alushakemisto.md  — Karttunen 1945, alushakemisto
   saimaan-100-vuotishistoria-henkilohakemisto.md — Karttunen 1945, henkilöhakemisto
   hoyrylaivamme-1977-laivahakemisto.md         — Riimala 1977, alusluettelo
